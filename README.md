@@ -33,7 +33,7 @@ Stats is an application that allows you to monitor your macOS system.
  - Disk utilization
  - Network usage
  - Battery level
- - Fan's control (not maintained)
+ - Fan speed display
  - Sensors information (Temperature/Voltage/Power)
  - Bluetooth devices
  - Multiple time zone clock
@@ -63,7 +63,7 @@ Due to a problem with high data load in the system process (`chronod`) responsib
 Stats tries to be efficient as it's possible. But reading some data periodically is not a cheap task. Each module has its own "price". So, if you want to reduce energy impact from the Stats you need to disable some Stats modules. The most inefficient modules are Sensors and Bluetooth. Disabling these modules could reduce CPU usage and power efficiency by up to 50% in some cases.
 
 ### Fan control
-Fan control is in legacy mode. It does not receive any updates or fixes. It's not dropped from the app just because in the old Macs it works pretty acceptable. I'm open to accepting fixed or improvements (via PR) for this feature in case someone would like to help with that. But have no option and time to provide support for this feature.
+Fan control has been removed from this privacy-focused build. Stats no longer installs or communicates with an SMC privileged helper. Fan data is read-only.
 
 ### Sensors show incorrect CPU/GPU core count
 CPU/GPU sensors are simply thermal zones (sensors) on the CPU/GPU. They have no relation to the number of cores or specific cores.
@@ -71,24 +71,20 @@ For example, a CPU is typically divided into two clusters: efficiency and perfor
 Additionally, with each new SoC, Apple changes the sensor keys. As a result, it takes time to determine which SMC values correspond to the appropriate sensors. If anyone knows how to accurately match the sensors for Apple Silicon, please contact me.
 
 ### App crash – what to do?
-First, ensure that you are using the latest version of Stats. There is a high chance that a fix preventing the crash has already been released. If you are already running the latest version, check the open issues. Only if none of the existing issues address your problem should you open a new issue.
+First, manually compare your build with the latest release. There is a high chance that a fix preventing the crash has already been released. If you are already running the latest version, check the open issues. Only if none of the existing issues address your problem should you open a new issue.
 
 ### Why my issue was closed without any response?
 Most probably because it's a duplicated issue and there is an answer to the question, report, or proposition. Please use a search by closed issues to get an answer.
 So, if your issue was closed without any response, most probably it already has a response.
 
-### External API
-Stats uses some external APIs, such as:
+### Network and privacy
+This privacy-focused build does not perform automatic update checks, public IP lookups, connectivity probes, telemetry, remote monitoring, remote control, or remote configuration.
 
-- https://api.mac-stats.com – For update checks and retrieving the public IP address
-- https://api.github.com – Fallback for update checks
+Stats reads local system counters and stores preferences locally. The network module displays local interface addresses and local traffic counters only. Network traffic labels such as "upload" mean bytes sent by your Mac over the selected interface; Stats does not upload those metrics to a server.
 
-Both of these APIs are used to check for updates. Additionally, an external request is required to obtain the public IP address. I do not want to use any third-party providers for retrieving the public IP address, so I use my own server for this purpose.
+Local hardware and network identifiers, such as the device serial number, interface MAC address, Wi-Fi SSID/BSSID, DNS servers, and local IP addresses, may still be shown in the UI for troubleshooting and professional diagnostics. They remain local display data and are not sent to Stats, system-stats, update, telemetry, or remote-control services.
 
-If you have concerns about these requests, you have a few options:
-
-- propose a PR that allows these features to work without an external server
-- block both of these servers using any network filtering app (if you're reading this, you're likely using something like Little Snitch, so you can easily do this). In this case do not expect to receive any updates or see your public IP in the network module.
+Manual links in the app or README, such as release, issue, sponsor, or documentation links, open only when the user explicitly selects them.
 
 ### How to contribute to the project?
 If you want to develop a new feature or you've found something that doesn't work, the first step is to open an issue so the feature or problem can be discussed. Pull requests should only be opened for existing issues and after discussion; otherwise, they may be closed automatically. There are a few cases where this can be skipped: for language changes, and for contributors who have already made significant contributions and whose implementations align well with the project.
