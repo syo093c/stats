@@ -36,9 +36,6 @@ internal class Popup: PopupWrapper {
     private var totalDownloadLabel: LabelField? = nil
     private var totalDownloadField: ValueField? = nil
     private var statusField: StatusBadgeView? = nil
-    private var connectivityField: StatusBadgeView? = nil
-    private var latencyField: ValueField? = nil
-    private var jitterField: ValueField? = nil
     
     private var interfaceView: NSStackView? = nil
     private var interfaceField: ValueField? = nil
@@ -59,12 +56,6 @@ internal class Popup: PopupWrapper {
     
     private var addressView: NSStackView? = nil
     private var localIPField: ValueField? = nil
-    private var publicIPv4Field: ValueField? = nil
-    private var publicIPv6Field: ValueField? = nil
-    private var publicIPv4View: NSView? = nil
-    private var publicIPv6View: NSView? = nil
-    private var publicIPState: Bool = true
-    private var emojiCCState: Bool = true
     
     private var processesView: NSView? = nil
     private var processes: ProcessesView? = nil
@@ -76,16 +67,12 @@ internal class Popup: PopupWrapper {
     private var chartFixedScale: Int = 12
     private var chartFixedScaleSize: SizeUnit = .MB
     private var chartPrefSection: PreferencesSection? = nil
-    private var connectivityChart: GridChartView? = nil
     
     private var processesInitialized: Bool = false
     
     private let usageCache = PopupCache<Network_Usage>()
-    private let connectivityCache = PopupCache<Network_Connectivity?>()
     
     private var lastReset: Date = Date()
-    private var latency: [Double] = []
-    private var jitter: [Double] = []
     
     private var base: DataSizeBase {
         DataSizeBase(rawValue: Store.shared.string(key: "\(self.title)_base", defaultValue: "byte")) ?? .byte
@@ -130,21 +117,14 @@ internal class Popup: PopupWrapper {
         self.chartScale = Scale.fromString(Store.shared.string(key: "\(self.title)_chartScale", defaultValue: self.chartScale.key))
         self.chartFixedScale = Store.shared.int(key: "\(self.title)_chartFixedScale", defaultValue: self.chartFixedScale)
         self.chartFixedScaleSize = SizeUnit.fromString(Store.shared.string(key: "\(self.title)_chartFixedScaleSize", defaultValue: self.chartFixedScaleSize.key))
-        self.publicIPState = Store.shared.bool(key: "\(self.title)_publicIP", defaultValue: self.publicIPState)
         self.interfaceDetailsState = Store.shared.bool(key: "\(self.title)_interfaceDetails", defaultValue: self.interfaceDetailsState)
-        self.emojiCCState = Store.shared.bool(key: "\(self.title)_emojiCC", defaultValue: self.emojiCCState)
         
         self.addArrangedSubview(self.initDashboard())
         self.addArrangedSubview(self.initChart())
-        self.addArrangedSubview(self.initConnectivityChart())
         self.addArrangedSubview(self.initDetails())
         self.addArrangedSubview(self.initInterface())
         self.addArrangedSubview(self.initAddress())
         self.addArrangedSubview(self.initProcesses())
-        
-        if !self.publicIPState {
-            self.addressView?.removeFromSuperview()
-        }
         
         self.recalculateHeight()
         
@@ -229,25 +209,6 @@ internal class Popup: PopupWrapper {
         return view
     }
     
-    private func initConnectivityChart() -> NSView {
-        let view: NSView = NSView(frame: NSRect(x: 0, y: 0, width: self.frame.width, height: 30 + Constants.Popup.separatorHeight))
-        view.heightAnchor.constraint(equalToConstant: view.bounds.height).isActive = true
-        let separator = separatorView(localizedString("Connectivity history"), origin: NSPoint(x: 0, y: 30), width: self.frame.width)
-        let container: NSView = NSView(frame: NSRect(x: 0, y: 0, width: self.frame.width, height: separator.frame.origin.y))
-        container.wantsLayer = true
-        container.layer?.backgroundColor = NSColor.lightGray.withAlphaComponent(0.1).cgColor
-        container.layer?.cornerRadius = 3
-        
-        let chart = GridChartView(frame: NSRect(x: 0, y: 1, width: container.frame.width, height: container.frame.height - 2), grid: (30, 3))
-        container.addSubview(chart)
-        self.connectivityChart = chart
-        
-        view.addSubview(separator)
-        view.addSubview(container)
-        
-        return view
-    }
-    
     private func initDetails() -> NSView {
         let view = NSStackView(frame: NSRect(x: 0, y: 0, width: self.frame.width, height: 0))
         view.orientation = .vertical
@@ -272,9 +233,6 @@ internal class Popup: PopupWrapper {
         self.totalDownloadField = totalDownload.2
         
         self.statusField = popupBadgeRow(view, title: "\(localizedString("Status")):").1
-        self.connectivityField = popupBadgeRow(view, title: "\(localizedString("Internet connection")):").1
-        self.latencyField = popupRow(view, title: "\(localizedString("Latency")):", value: "0 ms").1
-        self.jitterField = popupRow(view, title: "\(localizedString("Jitter")):", value: "0 ms").1
         
         return view
     }
@@ -326,34 +284,10 @@ internal class Popup: PopupWrapper {
         view.orientation = .vertical
         view.spacing = 0
         
-        view.addArrangedSubview(SeparatorView(
-            label: localizedString("Address"),
-            button: PopupButton(toolTip: localizedString("Refresh"), icon: "arrow.clockwise") { [weak self] in
-                self?.refreshPublicIP()
-            }
-        ))
+        view.addArrangedSubview(SeparatorView(label: localizedString("Address")))
         
         self.localIPField = popupRow(view, title: "\(localizedString("Local IP")):", value: localizedString("Unknown")).1
-        
-        let ipV4 = popupRow(view, title: "\(localizedString("Public IP")):", value: localizedString("Unknown"))
-        let ipV6 = popupRow(view, title: "\(localizedString("Public IP")):", value: localizedString("Unknown"))
-        
-        self.publicIPv4Field = ipV4.1
-        self.publicIPv6Field = ipV6.1
-        self.publicIPv4View = ipV4.2
-        self.publicIPv6View = ipV6.2
-        
         self.localIPField?.isSelectable = true
-        self.publicIPv4Field?.isSelectable = true
-        self.publicIPv6Field?.isSelectable = true
-        
-        if let valueView = self.publicIPv6Field {
-            valueView.font = NSFont.systemFont(ofSize: 7, weight: .semibold)
-            valueView.setFrameOrigin(NSPoint(x: valueView.frame.origin.x, y: -1))
-        }
-        
-        ipV4.2.removeFromSuperview()
-        ipV6.2.removeFromSuperview()
         
         self.addressView = view
         return view
@@ -384,7 +318,6 @@ internal class Popup: PopupWrapper {
     
     public override func appear() {
         self.replay(self.usageCache, render: self.renderUsage)
-        self.replay(self.connectivityCache, render: self.renderConnectivity)
     }
     
     public func numberOfProcessesUpdated() {
@@ -507,56 +440,6 @@ internal class Popup: PopupWrapper {
             self.localIPField?.stringValue = privateIP
         }
         
-        if let view = self.publicIPv4View {
-            if let addr = value.raddr.v4 {
-                if view.superview == nil {
-                    self.addressView?.addArrangedSubview(view)
-                    resized = true
-                }
-                var ip = addr
-                if let cc = value.raddr.countryCode, !cc.isEmpty {
-                    if self.emojiCCState, let flag = countryFlag(cc) {
-                        ip += " \(flag)"
-                    } else {
-                        ip += " (\(cc))"
-                    }
-                    self.publicIPv4Field?.toolTip = cc
-                }
-                if self.publicIPv4Field?.stringValue != ip {
-                    self.publicIPv4Field?.stringValue = ip
-                }
-            } else if view.superview != nil {
-                view.removeFromSuperview()
-                resized = true
-                self.publicIPv4Field?.stringValue = localizedString("Unknown")
-            }
-        }
-        
-        if let view = self.publicIPv6View {
-            if let addr = value.raddr.v6 {
-                if view.superview == nil {
-                    self.addressView?.addArrangedSubview(view)
-                    resized = true
-                }
-                var ip = addr
-                if let cc = value.raddr.countryCode {
-                    if self.emojiCCState, let flag = countryFlag(cc) {
-                        ip += " \(flag)"
-                    } else {
-                        ip += " (\(cc))"
-                    }
-                    self.publicIPv6Field?.toolTip = cc
-                }
-                if self.publicIPv6Field?.stringValue != ip {
-                    self.publicIPv6Field?.stringValue = ip
-                }
-            } else if view.superview != nil {
-                view.removeFromSuperview()
-                resized = true
-                self.publicIPv6Field?.stringValue = localizedString("Unknown")
-            }
-        }
-        
         if self.interfaceDetailsState {
             if !value.dns.isEmpty {
                 let servers = value.dns.joined(separator: "\n")
@@ -591,43 +474,6 @@ internal class Popup: PopupWrapper {
         self.chart?.display()
     }
     
-    public func connectivityCallback(_ value: Network_Connectivity?) {
-        if self.latency.count >= 90 {
-            self.latency.remove(at: 0)
-        }
-        self.latency.append(value?.latency ?? 0)
-        
-        if self.jitter.count >= 90 {
-            self.jitter.remove(at: 0)
-        }
-        self.jitter.append(value?.jitter ?? 0)
-        
-        self.apply(value, to: self.connectivityCache, render: self.renderConnectivity)
-        
-        if let value, let chart = self.connectivityChart {
-            chart.addValue(value.status)
-        }
-    }
-    
-    private func renderConnectivity(_ value: Network_Connectivity?) {
-        var latency = localizedString("Unknown")
-        var jitter = localizedString("Unknown")
-        
-        if let v = value {
-            if v.status && !self.latency.isEmpty {
-                latency = "\((self.latency.reduce(0, +) / Double(self.latency.count)).rounded(toPlaces: 2)) ms"
-            }
-            if v.status && !self.jitter.isEmpty {
-                jitter = "\((self.jitter.reduce(0, +) / Double(self.jitter.count)).rounded(toPlaces: 2)) ms"
-            }
-        }
-        self.latencyField?.stringValue = latency
-        self.jitterField?.stringValue = jitter
-        
-        self.connectivityField?.setStatus(value?.status)
-        self.connectivityChart?.display()
-    }
-    
     public func processCallback(_ list: [Network_Process]) {
         DispatchQueue.main.async(execute: {
             if !(self.window?.isVisible ?? false) && self.processesInitialized {
@@ -645,10 +491,6 @@ internal class Popup: PopupWrapper {
             
             self.processesInitialized = true
         })
-    }
-    
-    public func resetConnectivityView() {
-        self.connectivityField?.setStatus(nil)
     }
     
     // MARK: - Settings
@@ -703,17 +545,6 @@ internal class Popup: PopupWrapper {
         view.addArrangedSubview(self.chartPrefSection!)
         self.chartPrefSection?.setRowVisibility(2, newState: self.chartScale == .fixed)
         
-        view.addArrangedSubview(PreferencesSection([
-            PreferencesRow(localizedString("Public IP"), component: switchView(
-                action: #selector(self.togglePublicIP),
-                state: self.publicIPState
-            )),
-            PreferencesRow(localizedString("Show country code instead of emoji"), component: switchView(
-                action: #selector(self.toggleEmojiCC),
-                state: !self.emojiCCState
-            ))
-        ]))
-        
         return view
     }
     
@@ -760,19 +591,6 @@ internal class Popup: PopupWrapper {
         Store.shared.set(key: "\(self.title)_chartScale", value: key)
         self.display()
     }
-    @objc private func togglePublicIP(_ sender: NSControl) {
-        self.publicIPState = controlState(sender)
-        Store.shared.set(key: "\(self.title)_publicIP", value: self.publicIPState)
-        
-        DispatchQueue.main.async(execute: {
-            if !self.publicIPState {
-                self.addressView?.removeFromSuperview()
-            } else if let view = self.addressView {
-                self.insertArrangedSubview(view, at: 4)
-            }
-            self.recalculateHeight()
-        })
-    }
     @objc private func toggleFixedScale(_ newValue: Int) {
         self.chart?.setScale(self.chartScale, Double(self.chartFixedScaleSize.toBytes(newValue)))
         Store.shared.set(key: "\(self.title)_chartFixedScale", value: newValue)
@@ -809,11 +627,6 @@ internal class Popup: PopupWrapper {
         
         self.recalculateHeight()
     }
-    @objc private func toggleEmojiCC(_ sender: NSControl) {
-        self.emojiCCState = !controlState(sender)
-        Store.shared.set(key: "\(self.title)_emojiCC", value: self.emojiCCState)
-    }
-    
     // MARK: - helpers
     
     private func topValueView(_ view: NSView, title: String, color: NSColor) -> (NSView, NSTextField, NSTextField, ColorView) {
@@ -906,13 +719,6 @@ internal class Popup: PopupWrapper {
         
         self.uploadStateView?.setState(self.uploadValue != 0)
         self.downloadStateView?.setState(self.downloadValue != 0)
-    }
-    
-    @objc private func refreshPublicIP() {
-        NotificationCenter.default.post(name: .refreshPublicIP, object: nil, userInfo: nil)
-        self.localIPField?.stringValue = localizedString("Updating...")
-        self.publicIPv4Field?.stringValue = localizedString("Updating...")
-        self.publicIPv6Field?.stringValue = localizedString("Updating...")
     }
     
     @objc private func resetTotalNetworkUsage() {

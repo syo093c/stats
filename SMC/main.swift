@@ -13,20 +13,14 @@ import Foundation
 
 enum CMDType: String {
     case list
-    case set
-    case fan
     case fans
-    case reset
     case help
     case unknown
     
     init(value: String) {
         switch value {
         case "list": self = .list
-        case "set": self = .set
-        case "fan": self = .fan
         case "fans": self = .fans
-        case "reset": self = .reset
         case "help": self = .help
         default: self = .unknown
         }
@@ -72,55 +66,6 @@ func main() {
             let value = SMC.shared.getValue(key)
             print("[\(key)]    ", value ?? 0)
         }
-    case .set:
-        guard let keyIndex = args.firstIndex(where: { $0 == "-k" }),
-              let valueIndex = args.firstIndex(where: { $0 == "-v" }),
-              args.indices.contains(keyIndex+1),
-              args.indices.contains(valueIndex+1) else {
-            return
-        }
-        
-        let key = args[keyIndex+1]
-        if key.count != 4 {
-            print("[ERROR]: key must contain 4 characters!")
-            return
-        }
-        
-        guard let value = Int(args[valueIndex+1]) else {
-            print("[ERROR]: wrong value passed!")
-            return
-        }
-        
-        let result = SMC.shared.write(key, value)
-        if result != kIOReturnSuccess {
-            print("[ERROR]: " + (String(cString: mach_error_string(result), encoding: String.Encoding.ascii) ?? "unknown error"))
-            return
-        }
-        
-        print("[INFO]: set \(value) on \(key)")
-    case .fan:
-        guard let idString = args.first, let id = Int(idString) else {
-            print("[ERROR]: missing fan id")
-            return
-        }
-        var help: Bool = true
-        
-        if let index = args.firstIndex(where: { $0 == "-v" }), args.indices.contains(index+1), let value = Int(args[index+1]) {
-            SMC.shared.setFanSpeed(id, speed: value)
-            help = false
-        }
-        
-        if let index = args.firstIndex(where: { $0 == "-m" }), args.indices.contains(index+1),
-           let raw = Int(args[index+1]), let mode = FanMode.init(rawValue: raw) {
-            SMC.shared.setFanMode(id, mode: mode)
-            help = false
-        }
-        
-        guard help else { return }
-        
-        print("Available Flags:")
-        print("  -m    change the fan mode: 0 - automatic, 1 - manual")
-        print("  -v    change the fan speed")
     case .fans:
         guard let count = SMC.shared.getValue("FNum") else {
             print("FNum not found")
@@ -138,30 +83,17 @@ func main() {
             
             print()
         }
-    case .reset:
-        #if arch(arm64)
-        if SMC.shared.resetFanControl() {
-            print("[reset] fan control restored to automatic")
-        } else {
-            print("[reset] fan control reset FAILED")
-        }
-        #else
-        print("[reset] not needed on Intel Macs")
-        #endif
     case .help, .unknown:
         print("SMC tool\n")
         print("Usage:")
         print("  ./smc [command]\n")
         print("Available Commands:")
         print("  list     list keys and values")
-        print("  set      set value to a key")
-        print("  fan      set fan speed")
         print("  fans     list of fans")
-        print("  reset    reset Ftst (Apple Silicon only)")
         print("  help     help menu\n")
         print("Available Flags:")
         print("  -t    list temperature sensors")
-        print("  -v    list voltage sensors (list cmd) / value (set cmd)")
+        print("  -v    list voltage sensors")
         print("  -p    list power sensors")
         print("  -f    list fans\n")
     }

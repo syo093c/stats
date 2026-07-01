@@ -15,8 +15,6 @@ import Kit
 internal class Settings: NSStackView, Settings_v {
     private var updateIntervalValue: Int = 3
     private var hidState: Bool
-    private var fanSpeedState: Bool = false
-    private var fansSyncState: Bool = false
     private var unknownSensorsState: Bool = false
     private var fanValueState: FanValue = .percentage
     
@@ -41,8 +39,6 @@ internal class Settings: NSStackView, Settings_v {
         
         self.updateIntervalValue = Store.shared.int(key: "\(self.title)_updateInterval", defaultValue: self.updateIntervalValue)
         self.hidState = Store.shared.bool(key: "\(self.title)_hid", defaultValue: self.hidState)
-        self.fanSpeedState = Store.shared.bool(key: "\(self.title)_speed", defaultValue: self.fanSpeedState)
-        self.fansSyncState = Store.shared.bool(key: "\(self.title)_fansSync", defaultValue: self.fansSyncState)
         self.unknownSensorsState = Store.shared.bool(key: "\(self.title)_unknown", defaultValue: self.unknownSensorsState)
         self.fanValueState = FanValue(rawValue: Store.shared.string(key: "\(self.title)_fanValue", defaultValue: self.fanValueState.rawValue)) ?? .percentage
         self.selectedSensor = Store.shared.string(key: "\(self.title)_sensor", defaultValue: self.selectedSensor)
@@ -60,14 +56,6 @@ internal class Settings: NSStackView, Settings_v {
                 action: #selector(self.toggleFanValue),
                 items: FanValues,
                 selected: self.fanValueState.rawValue
-            )),
-            PreferencesRow(localizedString("Save the fan speed"), component: switchView(
-                action: #selector(self.toggleSpeedState),
-                state: self.fanSpeedState
-            )),
-            PreferencesRow(localizedString("Synchronize fan's control"), component: switchView(
-                action: #selector(self.toggleFansSync),
-                state: self.fansSyncState
             ))
         ]))
         
@@ -171,19 +159,10 @@ internal class Settings: NSStackView, Settings_v {
         Store.shared.set(key: "\(self.title)_updateInterval", value: value)
         self.setInterval(value)
     }
-    @objc private func toggleSpeedState(_ sender: NSControl) {
-        self.fanSpeedState = controlState(sender)
-        Store.shared.set(key: "\(self.title)_speed", value: self.fanSpeedState)
-        self.callback()
-    }
     @objc private func toggleHID(_ sender: NSControl) {
         self.hidState = controlState(sender)
         Store.shared.set(key: "\(self.title)_hid", value: self.hidState)
         self.HIDcallback()
-    }
-    @objc private func toggleFansSync(_ sender: NSControl) {
-        self.fansSyncState = controlState(sender)
-        Store.shared.set(key: "\(self.title)_fansSync", value: self.fansSyncState)
     }
     @objc private func toggleuUnknownSensors(_ sender: NSControl) {
         self.unknownSensorsState = controlState(sender)

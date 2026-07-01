@@ -32,7 +32,6 @@ public struct Network_interface: Codable {
 public struct Network_addr: Codable {
     var v4: String? = nil
     var v6: String? = nil
-    var countryCode: String? = nil
 }
 
 public struct Network_wifi: Codable {
@@ -68,12 +67,11 @@ public struct Bandwidth: Codable {
     var download: Int64 = 0
 }
 
-public struct Network_Usage: Codable, RemoteType {
+public struct Network_Usage: Codable {
     var bandwidth: Bandwidth = Bandwidth()
     var total: Bandwidth = Bandwidth()
     
     var laddr: Network_addr = Network_addr() // local ip
-    var raddr: Network_addr = Network_addr() // remote ip
     
     var dns: [String] = []
     
@@ -87,7 +85,6 @@ public struct Network_Usage: Codable, RemoteType {
         self.bandwidth = Bandwidth()
         
         self.laddr = Network_addr()
-        self.raddr = Network_addr()
         
         self.dns = []
         
@@ -97,17 +94,6 @@ public struct Network_Usage: Codable, RemoteType {
         self.wifiDetails.reset()
     }
     
-    public func remote() -> Data? {
-        let addr = "\(self.laddr.v4 ?? ""),\(self.laddr.v6 ?? ""),\(self.raddr.v4 ?? ""),\(self.raddr.v6 ?? "")"
-        let string = "1,\(self.interface?.BSDName ?? ""),1,\(self.bandwidth.download),\(self.bandwidth.upload),\(addr)$"
-        return string.data(using: .utf8)
-    }
-}
-
-public struct Network_Connectivity: Codable {
-    var status: Bool = false
-    var latency: Double = 0
-    var jitter: Double = 0
 }
 
 public struct Network_Process: Codable, Process_p {
@@ -143,9 +129,6 @@ public class Network: Module {
     
     private var usageReader: UsageReader? = nil
     private var processReader: ProcessReader? = nil
-    private var connectivityReader: ConnectivityReader? = nil
-    
-    private let ipUpdater = NSBackgroundActivityScheduler(identifier: "eu.exelban.Stats.Network.IP")
     
     private var widgetActivationThresholdState: Bool {
         Store.shared.bool(key: "\(self.config.name)_widgetActivationThresholdState", defaultValue: false)
@@ -156,11 +139,8 @@ public class Network: Module {
     private var widgetActivationThresholdSize: SizeUnit {
         SizeUnit.fromString(Store.shared.string(key: "\(self.name)_widgetActivationThresholdSize", defaultValue: SizeUnit.MB.key))
     }
-    private var publicIPRefreshInterval: String {
-        Store.shared.string(key: "\(self.name)_publicIPRefreshInterval", defaultValue: "never")
-    }
     private var textValue: String {
-        Store.shared.string(key: "\(self.name)_textWidgetValue", defaultValue: "$addr.public - $status")
+        Store.shared.string(key: "\(self.name)_textWidgetValue", defaultValue: "$addr.private - $status")
     }
     
     private var systemWidgetsUpdatesState: Bool {
@@ -192,10 +172,6 @@ public class Network: Module {
                 self?.popupView.processCallback(list)
             }
         }
-        self.connectivityReader = ConnectivityReader(.network) { [weak self] value in
-            self?.connectivityCallback(value)
-        }
-        
         self.settingsView.callbackWhenUpdateNumberOfProcesses = { [weak self] in
             guard let self else { return }
             self.popupView.numberOfProcessesUpdated()
@@ -211,22 +187,8 @@ public class Network: Module {
         self.settingsView.usageResetCallback = { [weak self] in
             self?.setUsageReset()
         }
-        self.settingsView.connectivityHostCallback = { [weak self] isDisabled in
-            if isDisabled {
-                self?.popupView.resetConnectivityView()
-                self?.connectivityCallback(Network_Connectivity(status: false))
-            }
-        }
-        self.settingsView.setInterval = { [weak self] value in
-            self?.connectivityReader?.setInterval(value)
-        }
-        self.settingsView.publicIPRefreshIntervalCallback = { [weak self] in
-            self?.setIPUpdater()
-        }
+        self.setReaders([self.usageReader, self.processReader])
         
-        self.setReaders([self.usageReader, self.processReader, self.connectivityReader])
-        
-        self.setIPUpdater()
         self.setUsageReset()
     }
     
@@ -273,14 +235,9 @@ public class Network: Module {
                     switch pair.key {
                     case "$addr":
                         switch pair.value {
-                        case "public": replacement = value.raddr.v4 ?? value.raddr.v6 ?? "-"
-                        case "publicV4": replacement = value.raddr.v4 ?? "-"
-                        case "publicV6": replacement = value.raddr.v6 ?? "-"
                         case "private": replacement = value.laddr.v4 ?? value.laddr.v6 ?? "-"
                         case "privateV4": replacement = value.laddr.v4 ?? "-"
                         case "privateV6": replacement = value.laddr.v6 ?? "-"
-                        case "countryCode": replacement = value.raddr.countryCode ?? "-"
-                        case "flag": replacement = value.raddr.countryCode != nil ? countryFlag(value.raddr.countryCode!) : "-"
                         default: return
                         }
                     case "$interface":
@@ -320,13 +277,6 @@ public class Network: Module {
                         }
                     case "$type":
                         replacement = value.connectionType?.rawValue ?? "-"
-                    case "$icmp":
-                        guard let connectivity = self.connectivityReader?.value else { return }
-                        switch pair.value {
-                        case "status": replacement = localizedString(connectivity.status ? "UP" : "DOWN")
-                        case "latency": replacement = "\(Int(connectivity.latency)) ms"
-                        default: return
-                        }
                     default: return
                     }
                     
@@ -345,45 +295,6 @@ public class Network: Module {
                 self.userDefaults?.set(blobData, forKey: "Network@UsageReader")
             }
             WidgetCenter.shared.reloadTimelines(ofKind: Network_entry.kind)
-        }
-    }
-    
-    private func connectivityCallback(_ raw: Network_Connectivity?) {
-        guard let value = raw, self.enabled else { return }
-        
-        self.popupView.connectivityCallback(value)
-        self.notificationsView.connectivityCallback(value)
-        self.previewView.connectivityCallback(value)
-        
-        self.menuBar.widgets.filter{ $0.isActive }.forEach { (w: SWidget) in
-            switch w.item {
-            case let widget as DotWidget:
-                let value = value.status ? SColor.secondGreen : SColor.secondRed
-                widget.setValue(value.additional as? NSColor ?? .systemGray)
-            default: break
-            }
-        }
-    }
-    
-    private func setIPUpdater() {
-        self.ipUpdater.invalidate()
-        
-        switch self.publicIPRefreshInterval {
-        case "hour":
-            self.ipUpdater.interval = 60 * 60
-        case "12":
-            self.ipUpdater.interval = 60 * 60 * 12
-        case "24":
-            self.ipUpdater.interval = 60 * 60 * 24
-        default: return
-        }
-        
-        self.ipUpdater.repeats = true
-        self.ipUpdater.schedule { (completion: @escaping NSBackgroundActivityScheduler.CompletionHandler) in
-            guard self.enabled && self.isAvailable() else { return }
-            debug("going to automatically refresh IP address...")
-            NotificationCenter.default.post(name: .refreshPublicIP, object: nil, userInfo: nil)
-            completion(NSBackgroundActivityScheduler.Result.finished)
         }
     }
     

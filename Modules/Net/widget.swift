@@ -18,7 +18,7 @@ public struct Network_entry: TimelineEntry {
     public static let kind = "NetworkWidget"
     public static var snapshot: Network_entry = Network_entry(value: Network_Usage(
         bandwidth: Bandwidth(upload: 1_238_400, download: 18_732_000),
-        raddr: Network_addr(v4: "192.168.0.1"),
+        laddr: Network_addr(v4: "192.168.0.1"),
         interface: Network_interface(displayName: "Stats"),
         status: true
     ), isPreview: true)
@@ -108,13 +108,13 @@ public struct NetworkWidget: Widget {
                             HStack {
                                 Text("IP").font(.system(size: 12, weight: .regular)).foregroundColor(.secondary)
                                 Spacer()
-                                if let raddr = value.raddr.v6 {
-                                    Text(raddr)
+                                if let laddr = value.laddr.v6 {
+                                    Text(laddr)
                                         .font(.system(size: 8))
                                         .multilineTextAlignment(.trailing)
                                         .frame(maxWidth: .infinity, alignment: .center)
-                                } else if let raddr = value.raddr.v4 {
-                                    Text(raddr)
+                                } else if let laddr = value.laddr.v4 {
+                                    Text(laddr)
                                 } else {
                                     Text("Unknown")
                                 }

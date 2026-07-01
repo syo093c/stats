@@ -68,12 +68,9 @@ public struct drive: Codable {
         Store.shared.bool(key: "Disk_\(self.uuid)_popup", defaultValue: true)
     }
     
-    public func remote() -> String {
-        return "\(self.uuid),\(self.size),\(self.size-self.free),\(self.free),\(self.activity.read),\(self.activity.write)"
-    }
 }
 
-public class Disks: Codable, RemoteType {
+public class Disks: Codable {
     private var queue: DispatchQueue = DispatchQueue(label: "eu.exelban.Stats.Disk.SynchronizedArray")
     private var _array: [drive] = []
     public var array: [drive] {
@@ -160,18 +157,6 @@ public class Disks: Codable, RemoteType {
         self.array[idx].smart = smart
     }
     
-    public func remote() -> Data? {
-        let arr = self.array.filter({ !$0.removable })
-        var string = "\(arr.count),"
-        for (i, v) in arr.enumerated() {
-            string += v.remote()
-            if i != self.array.count {
-                string += ","
-            }
-        }
-        string += "$"
-        return string.data(using: .utf8)
-    }
 }
 
 public struct Disk_process: Process_p, Codable {

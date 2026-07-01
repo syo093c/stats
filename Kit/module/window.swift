@@ -157,20 +157,6 @@ open class Window: NSStackView {
             right: Constants.Settings.margin
         )
         
-        if self.config.pointee.name == "Remote" {
-            let widgetSelector = WidgetSelectorView(module: self.config.pointee.name, widgets: self.widgets, stateCallback: self.loadWidget)
-            self.widgetSelector = widgetSelector
-            
-            view.addArrangedSubview(widgetSelector)
-            
-            if let settingsView = self.moduleSettings {
-                settingsView.load(widgets: self.widgets.filter { $0.isActive }.map { $0.type })
-                view.addArrangedSubview(settingsView)
-            }
-            
-            return view
-        }
-        
         var labels: [String] = [
             localizedString("Module"),
             localizedString("Widgets")

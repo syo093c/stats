@@ -14,7 +14,6 @@ import Kit
 
 internal class Preview: PreviewWrapper {
     private var chart: NetworkChartView? = nil
-    private var grid: GridChartView? = nil
     
     private var downloadValueField: NSTextField? = nil
     private var downloadUnitField: NSTextField? = nil
@@ -27,9 +26,6 @@ internal class Preview: PreviewWrapper {
     private var totalUploadField: ValueField? = nil
     private var totalDownloadField: ValueField? = nil
     private var statusField: StatusBadgeView? = nil
-    private var connectivityField: StatusBadgeView? = nil
-    private var latencyField: ValueField? = nil
-    private var jitterField: ValueField? = nil
     
     private var interfaceField: ValueField? = nil
     private var interfaceStatusField: StatusBadgeView? = nil
@@ -44,12 +40,9 @@ internal class Preview: PreviewWrapper {
     private var speedField: ValueField? = nil
     
     private var localIPField: ValueField? = nil
-    private var publicIPv4Field: ValueField? = nil
-    private var publicIPv6Field: ValueField? = nil
     private var dnsField: ValueField? = nil
     
     private var initialized: Bool = false
-    private var connectionInitialized: Bool = false
     
     private var downloadColorState: SColor = .secondBlue
     private var downloadColor: NSColor {
@@ -82,7 +75,6 @@ internal class Preview: PreviewWrapper {
         
         self.addArrangedSubview(PreferencesSection([self.usageView()]))
         self.addArrangedSubview(PreferencesSection([self.historyView()]))
-        self.addArrangedSubview(PreferencesSection(title: localizedString("Connectivity history"), [self.connectivityView()]))
         
         let splitView = NSStackView()
         splitView.orientation = .horizontal
@@ -151,20 +143,6 @@ internal class Preview: PreviewWrapper {
         return view
     }
     
-    private func connectivityView() -> NSView {
-        let view: NSStackView = NSStackView()
-        view.orientation = .vertical
-        view.distribution = .fillEqually
-        view.spacing = Constants.Settings.margin*2
-        view.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        
-        let grid = GridChartView(grid: (50, 6))
-        self.grid = grid
-        view.addArrangedSubview(grid)
-        
-        return view
-    }
-    
     private func detailsView() -> NSView {
         let view = NSStackView()
         view.orientation = .vertical
@@ -174,9 +152,6 @@ internal class Preview: PreviewWrapper {
         self.totalUploadField = previewRow(view, color: self.uploadColor, title: "\(localizedString("Total upload")):", value: "0")
         self.totalDownloadField = previewRow(view, color: self.downloadColor, title: "\(localizedString("Total download")):", value: "0")
         self.statusField = previewBadgeRow(view, title: "\(localizedString("Status")):")
-        self.connectivityField = previewBadgeRow(view, title: "\(localizedString("Internet connection")):")
-        self.latencyField = previewRow(view, title: "\(localizedString("Latency")):", value: "0 ms")
-        self.jitterField = previewRow(view, title: "\(localizedString("Jitter")):", value: "0 ms")
         
         return view
     }
@@ -218,12 +193,6 @@ internal class Preview: PreviewWrapper {
         
         self.localIPField = previewRow(view, title: "\(localizedString("Local IP")):", value: localizedString("Unknown"))
         self.localIPField?.isSelectable = true
-        self.publicIPv4Field = previewRow(view, title: "\(localizedString("Public IP")) (v4):", value: "")
-        self.publicIPv4Field?.isSelectable = true
-        self.publicIPv4Field?.superview?.isHidden = true
-        self.publicIPv6Field = previewRow(view, title: "\(localizedString("Public IP")) (v6):", value: "")
-        self.publicIPv6Field?.isSelectable = true
-        self.publicIPv6Field?.superview?.isHidden = true
         self.dnsField = previewRow(view, title: "\(localizedString("DNS Server")):", value: localizedString("Unknown"))
         self.dnsField?.isSelectable = true
         
@@ -327,28 +296,6 @@ internal class Preview: PreviewWrapper {
                 }
                 self.localIPField?.stringValue = localIP
                 
-                if let v4 = value.raddr.v4, !v4.isEmpty {
-                    var ip = v4
-                    if let cc = value.raddr.countryCode, !cc.isEmpty {
-                        ip += " (\(cc))"
-                    }
-                    self.publicIPv4Field?.stringValue = ip
-                    self.publicIPv4Field?.superview?.isHidden = false
-                } else {
-                    self.publicIPv4Field?.superview?.isHidden = true
-                }
-                
-                if let v6 = value.raddr.v6, !v6.isEmpty {
-                    var ip = v6
-                    if let cc = value.raddr.countryCode, !cc.isEmpty {
-                        ip += " (\(cc))"
-                    }
-                    self.publicIPv6Field?.stringValue = ip
-                    self.publicIPv6Field?.superview?.isHidden = false
-                } else {
-                    self.publicIPv6Field?.superview?.isHidden = true
-                }
-                
                 if !value.dns.isEmpty {
                     self.dnsField?.stringValue = value.dns.joined(separator: ", ")
                 } else {
@@ -362,23 +309,6 @@ internal class Preview: PreviewWrapper {
                 chart.setBase(self.base)
                 chart.setSpeedUnit(self.speedUnit)
                 chart.addValue(upload: Double(value.bandwidth.upload), download: Double(value.bandwidth.download))
-            }
-        })
-    }
-    
-    public func connectivityCallback(_ value: Network_Connectivity?) {
-        DispatchQueue.main.async(execute: {
-            if (self.window?.isVisible ?? false) || !self.connectionInitialized {
-                if let value {
-                    self.connectivityField?.setStatus(value.status)
-                    self.latencyField?.stringValue = "\(Int(value.latency)) ms"
-                    self.jitterField?.stringValue = "\(Int(value.jitter)) ms"
-                }
-                self.connectionInitialized = true
-            }
-            
-            if let value, let chart = self.grid {
-                chart.addValue(value.status)
             }
         })
     }

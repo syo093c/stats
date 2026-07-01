@@ -45,12 +45,8 @@ internal class Settings: NSStackView, Settings_v, NSTableViewDelegate, NSTableVi
     private var footerView: NSStackView? = nil
     private var deleteButton: NSButton? = nil
     
-    private var ntpSync: Bool = false
-    
     public init(_ module: ModuleType) {
         self.title = module.stringValue
-        
-        self.ntpSync = Store.shared.bool(key: "\(self.title)_ntpSync", defaultValue: self.ntpSync)
         
         super.init(frame: NSRect.zero)
         
@@ -115,13 +111,6 @@ internal class Settings: NSStackView, Settings_v, NSTableViewDelegate, NSTableVi
         
         let separator = NSBox()
         separator.boxType = .separator
-        
-        self.addArrangedSubview(PreferencesSection([
-            PreferencesRow(localizedString("Sync with NTP server"), component: switchView(
-                action: #selector(self.toggleNTPSync),
-                state: self.ntpSync
-            ))
-        ]))
         
         self.addArrangedSubview(self.scrollView)
         self.addArrangedSubview(separator)
@@ -321,10 +310,5 @@ internal class Settings: NSStackView, Settings_v, NSTableViewDelegate, NSTableVi
     }
     @objc private func openFormatHelp(_ sender: NSButton) {
         NSWorkspace.shared.open(URL(string: "https://www.nsdateformatter.com")!)
-    }
-    @objc func toggleNTPSync(_ sender: NSControl) {
-        self.ntpSync = controlState(sender)
-        Store.shared.set(key: "\(self.title)_ntpSync", value: self.ntpSync)
-        self.callback()
     }
 }

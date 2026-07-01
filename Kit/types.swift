@@ -77,14 +77,6 @@ public let CombinedModulesSpacings: [KeyValue_t] = [
     KeyValue_t(key: "8", value: "8", additional: 8)
 ]
 
-public let PublicIPAddressRefreshIntervals: [KeyValue_t] = [
-    KeyValue_t(key: "never", value: "Never"),
-    KeyValue_t(key: "separator", value: "separator"),
-    KeyValue_t(key: "hour", value: "Every hour"),
-    KeyValue_t(key: "12", value: "Every 12 hours"),
-    KeyValue_t(key: "24", value: "Every 24 hours")
-]
-
 public enum DataSizeBase: String {
     case bit
     case byte
@@ -306,21 +298,12 @@ public extension Notification.Name {
     static let togglePreview = Notification.Name("togglePreview")
     static let openModuleSettings = Notification.Name("openModuleSettings")
     static let clickInSettings = Notification.Name("clickInSettings")
-    static let refreshPublicIP = Notification.Name("refreshPublicIP")
     static let resetTotalNetworkUsage = Notification.Name("resetTotalNetworkUsage")
-    static let syncFansControl = Notification.Name("syncFansControl")
-    static let checkFanModes = Notification.Name("checkFanModes")
-    static let fanHelperState = Notification.Name("fanHelperState")
     static let toggleOneView = Notification.Name("toggleOneView")
     static let widgetRearrange = Notification.Name("widgetRearrange")
     static let moduleRearrange = Notification.Name("moduleRearrange")
     static let pause = Notification.Name("pause")
-    static let toggleFanControl = Notification.Name("toggleFanControl")
     static let combinedModulesPopup = Notification.Name("combinedModulesPopup")
-    static let remoteLoginSuccess = Notification.Name("remoteLoginSuccess")
-    static let remoteState = Notification.Name("remoteState")
-    static let remoteAuthenticated = Notification.Name("remoteAuthenticated")
-    static let remoteUpdate = Notification.Name("remoteUpdate")
     static let openWindow = Notification.Name("openWindow")
 }
 
@@ -476,16 +459,4 @@ public enum RAMPressure: String, Codable {
             self = .normal
         }
     }
-}
-
-public struct TokenResponse: Codable {
-    public let access_token: String
-    public let refresh_token: String
-}
-
-public struct DeviceResponse: Codable {
-    public let device_code: String
-    public let user_code: String
-    public let verification_uri_complete: URL
-    public let interval: Int?
 }

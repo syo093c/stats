@@ -108,9 +108,6 @@ public class Store {
     public func export(to url: URL) {
         guard let id = Bundle.main.bundleIdentifier,
               var dictionary = self.defaults.persistentDomain(forName: id) else { return }
-        dictionary.removeValue(forKey: "remote_id")
-        dictionary.removeValue(forKey: "access_token")
-        dictionary.removeValue(forKey: "refresh_token")
         NSDictionary(dictionary: dictionary).write(to: url, atomically: true)
     }
     
@@ -118,20 +115,11 @@ public class Store {
         guard let id = Bundle.main.bundleIdentifier,
               let dict = NSDictionary(contentsOf: url) as? [String: Any] else { return }
         
-        let keysToPreserve = ["remote_id", "access_token", "refresh_token"]
-        var importedDict = dict
-        
-        for key in keysToPreserve {
-            if let existingValue = getValue(for: key, type: String.self) {
-                importedDict[key] = existingValue
-            }
-        }
-        
         self.cacheQueue.async(flags: .barrier) {
-            self.cache = importedDict
+            self.cache = dict
         }
         
-        self.defaults.setPersistentDomain(importedDict, forName: id)
+        self.defaults.setPersistentDomain(dict, forName: id)
         restartApp(self)
     }
 }

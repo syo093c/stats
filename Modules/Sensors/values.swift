@@ -293,37 +293,6 @@ public struct Fan: Sensor_p, Codable {
         Store.shared.string(key: "sensor_\(self.key)_notification", defaultValue: "")
     }
     
-    public var customSpeed: Int? {
-        get {
-            if !Store.shared.exist(key: "fan_\(self.id)_speed") {
-                return nil
-            }
-            return Store.shared.int(key: "fan_\(self.id)_speed", defaultValue: Int(self.minSpeed))
-        }
-        set {
-            if let value = newValue {
-                Store.shared.set(key: "fan_\(self.id)_speed", value: value)
-            } else {
-                Store.shared.remove("fan_\(self.id)_speed")
-            }
-        }
-    }
-    public var customMode: FanMode? {
-        get {
-            if !Store.shared.exist(key: "fan_\(self.id)_mode") {
-                return nil
-            }
-            let value = Store.shared.int(key: "fan_\(self.id)_mode", defaultValue: FanMode.automatic.rawValue)
-            return FanMode(rawValue: value)
-        }
-        set {
-            if let value = newValue {
-                Store.shared.set(key: "fan_\(self.id)_mode", value: value.rawValue)
-            } else {
-                Store.shared.remove("fan_\(self.id)_mode")
-            }
-        }
-    }
 }
 
 // List of keys: https://github.com/acidanthera/VirtualSMC/blob/master/Docs/SMCSensorKeys.txt
