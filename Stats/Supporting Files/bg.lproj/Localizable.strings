@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Отваряне на монитора на активностите";
-"Report a bug" = "Докладване на проблем";
-"Support the application" = "Подкрепа";
 "Close application" = "Затваряне на приложението";
 "Open application settings" = "Отваряне на настройките на приложението";
 "Open dashboard" = "Отваряне на таблото";
 "No notifications available in this module" = "В този модул няма налични известия"; // gemma4:31b
 "Open Calendar" = "Отвори календара"; // translategemma:4b
 "Toggle the module" = "Превключи модула"; // gemma4:31b
-"Open System Stats" = "Отвори System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Проверка за обновления";
 "At start" = "При стартиране";
 "Once per day" = "Веднъж на ден";
 "Once per week" = "Веднъж на седмица";
 "Once per month" = "Веднъж на месец";
 "Never" = "Никога";
-"Check for update" = "Проверка за обновления";
 "Show icon in dock" = "Показване на икона в Dock";
 "Start at login" = "Автоматично стартиране";
 "Build number" = "Номер на компилацията"; // gemma4:31b
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Целзиус";
 "Fahrenheit" = "Фаренхайт";
-"Save the fan speed" = "Запазете скоростта на вентилатора";
 "Fan" = "Вентилатор";
 "HID sensors" = "HID сензори"; // gemma4:31b
-"Synchronize fan's control" = "Синхронизирай управлението на вентилаторите"; // gemma4:31b
 "Current" = "Текущо";
 "Energy" = "Енергия";
 "Show unknown sensors" = "Показване на непознатите сензори";
-"Install fan helper" = "Инсталирай помощник за вентилатора"; // gemma4:31b
-"Uninstall fan helper" = "Деинсталирай помощника за вентилатора"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "Одобрете в Системни настройки ▸ Обекти за вход"; // gemma4:31b
-"Fan helper needs your approval" = "Помощникът за вентилатора се нуждае от вашето одобрение"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "За да контролирате вентилаторите, активирайте Stats в Системни настройки ▸ Обекти за вход."; // gemma4:31b
-"Open Login Items" = "Отвори обекти при вход"; // gemma4:31b
-"Could not enable the fan helper" = "Не успя да се активира помощникът за вентилатора"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Отворете Системни настройки ▸ Обекти за вход, уверете се, че Stats е разрешен във фонов режим, след това опитайте отново."; // gemma4:31b
 "Fan value" = "Стойност на вентилатора"; // gemma4:31b
-"Turn off fan" = "Изключи вентилатора"; // gemma4:31b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Вие ще изключите вентилатора. Това не е препоръчително действие, което може да повреди вашия Mac, сигурни ли сте, че искате да направите това?"; // gemma4:31b
 "Sensor threshold" = "Праг на датчика"; // gemma4:31b
 "Left fan" = "Ляво"; // gemma4:31b
 "Right fan" = "Дясно"; // gemma4:31b
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Качване";
 "Downloading" = "Изтегляне";
-"Public IP" = "Публично IP";
 "Local IP" = "Локално IP";
 "Interface" = "Интерфейс";
 "Physical address" = "Физически адрес";
@@ -386,24 +368,12 @@
 "Channel" = "Канал";
 "Autodetection" = "Автоматично засичане";
 "Widget activation threshold" = "Праг за активация на виджета"; // gemma4:31b
-"Internet connection" = "Интернет връзка";
-"Connectivity host" = "Хост на свързаността"; // gemma4:31b
-"Leave empty to disable the check" = "Оставете празно, за да изключите проверката";
-"Connectivity history" = "История на свързаността"; // gemma4:31b
-"Auto-refresh public IP address" = "Автоматично обновяване на публичния IP адрес"; // translategemma:4b
-"Every hour" = "Всеки час"; // gemma4:31b
-"Every 12 hours" = "На всеки 12 часа"; // gemma4:31b
-"Every 24 hours" = "На всеки 24 часа"; // gemma4:31b
 "Last reset" = "Последно нулиране преди %0"; // gemma4:31b
-"Latency" = "Закъснение"; // gemma4:31b
 "Address" = "Адрес"; // translategemma:4b
 "WiFi network" = "Мрежа WiFi"; // gemma4:31b
 "Local IP changed" = "Локалният IP адрес се промени"; // gemma4:31b
-"Public IP changed" = "Публичният IP адрес се промени"; // gemma4:31b
 "Previous IP" = "Предишен IP адрес: %0"; // gemma4:31b
 "New IP" = "Нов IP адрес: %0"; // gemma4:31b
-"Internet connection lost" = "Интернет връзката е загубена"; // gemma4:31b
-"Internet connection established" = "Интернет връзката е възстановена"; // gemma4:31b
 "Show country code instead of emoji" = "Показвай кода на страната вместо емоджи"; // gemma4:31b
 
 // Battery

@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "アクティビティモニタを開く";
-"Report a bug" = "バグを報告";
-"Support the application" = "Stats をサポート";
 "Close application" = "Stats を終了";
 "Open application settings" = "Stats の設定を開く";
 "Open dashboard" = "ダッシュボードを開く";
 "No notifications available in this module" = "このモジュールには利用可能な通知がありません";
 "Open Calendar" = "カレンダーを開く";
 "Toggle the module" = "モジュールの切り替え";
-"Open System Stats" = "System Statsを開く"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "アップデートの確認頻度";
 "At start" = "起動時";
 "Once per day" = "1日ごと";
 "Once per week" = "1週間ごと";
 "Once per month" = "1ヶ月ごと";
 "Never" = "確認しない";
-"Check for update" = "アップデートを確認する";
 "Show icon in dock" = "Dock にアイコンを表示";
 "Start at login" = "ログイン時に開く";
 "Build number" = "ビルド番号";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "摂氏（℃）";
 "Fahrenheit" = "華氏（℉）";
-"Save the fan speed" = "ファンの速度を保存";
 "Fan" = "ファン";
 "HID sensors" = "HID センサー";
-"Synchronize fan's control" = "ファン制御を同期"; // gemma4:31b
 "Current" = "電流";
 "Energy" = "電力";
 "Show unknown sensors" = "不明なセンサーを表示"; // gemma4:31b
-"Install fan helper" = "ファンヘルパーをインストール"; // gemma4:31b
-"Uninstall fan helper" = "ファンヘルパーをアンインストール"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "システム設定 ▸ ログイン項目で承認してください"; // gemma4:31b
-"Fan helper needs your approval" = "ファンヘルパーにはあなたの承認が必要です"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "ファンを制御するには、「システム設定」▸「ログイン項目」でStatsを有効にしてください。"; // gemma4:31b
-"Open Login Items" = "ログイン項目を開く"; // gemma4:31b
-"Could not enable the fan helper" = "ファンヘルパーを有効にできませんでした"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "「システム設定 ▸ ログイン項目」を開き、Statsがバックグラウンドで許可されていることを確認してから、もう一度お試しください。"; // gemma4:31b
 "Fan value" = "ファンの表示単位";
-"Turn off fan" = "ファンの停止";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "ファンの停止はmacに大きなダメージを与える可能性がある為、推奨されません。本当に実行しますか？";
 "Sensor threshold" = "センサーのしきい値"; // gemma4:31b
 "Left fan" = "左ファン";
 "Right fan" = "右ファン";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "送信";
 "Downloading" = "受信";
-"Public IP" = "パブリック IP";
 "Local IP" = "ローカル IP";
 "Interface" = "インターフェイス";
 "Physical address" = "MAC アドレス";
@@ -386,24 +368,12 @@
 "Channel" = "チャンネル"; // translategemma:4b
 "Autodetection" = "自動検出"; // translategemma:4b
 "Widget activation threshold" = "ウィジェットの有効化しきい値"; // gemma4:31b
-"Internet connection" = "インターネット接続"; // translategemma:4b
-"Connectivity host" = "接続ホスト"; // translategemma:4b
-"Leave empty to disable the check" = "空欄のままにするとチェックが無効になります"; // gemma4:31b
-"Connectivity history" = "接続履歴"; // translategemma:4b
-"Auto-refresh public IP address" = "パブリックIPアドレスの自動更新"; // gemma4:31b
-"Every hour" = "1時間ごと"; // gemma4:31b
-"Every 12 hours" = "12時間ごと"; // gemma4:31b
-"Every 24 hours" = "24時間ごと"; // gemma4:31b
 "Last reset" = "最終リセット %0 前"; // gemma4:31b
-"Latency" = "レイテンシ"; // gemma4:31b
 "Address" = "アドレス";
 "WiFi network" = "WiFiネットワーク"; // gemma4:31b
 "Local IP changed" = "ローカルIPが変更されました"; // gemma4:31b
-"Public IP changed" = "パブリックIPが変更されました"; // gemma4:31b
 "Previous IP" = "前のIP: %0"; // gemma4:31b
 "New IP" = "新しいIP: %0"; // gemma4:31b
-"Internet connection lost" = "インターネット接続が切断されました"; // gemma4:31b
-"Internet connection established" = "インターネット接続が確立されました"; // translategemma:4b
 "Show country code instead of emoji" = "絵文字の代わりに国コードを表示"; // gemma4:31b
 
 // Battery

@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Etkinlik Monitörünü Aç";
-"Report a bug" = "Hata bildir";
-"Support the application" = "Uygulamayı destekleyin";
 "Close application" = "Uygulamayı kapat";
 "Open application settings" = "Uygulama ayarlarını aç";
 "Open dashboard" = "Gösterge panelini aç";
 "No notifications available in this module" = "Bu modülde kullanılabilir bildirim mevcut değil";
 "Open Calendar" = "Takvimi Aç";
 "Toggle the module" = "Modülü aç/kapa";
-"Open System Stats" = "System Stats'ı Aç"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Güncellemeleri denetle";
 "At start" = "Başlangıçta";
 "Once per day" = "Günlük";
 "Once per week" = "Haftalık";
 "Once per month" = "Aylık";
 "Never" = "Asla";
-"Check for update" = "Güncellemeleri denetle";
 "Show icon in dock" = "Dock'ta göster";
 "Start at login" = "Başlangıçta çalıştır";
 "Build number" = "Sürüm numarası";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Santigrat";
 "Fahrenheit" = "Fahrenhayt";
-"Save the fan speed" = "Fan hızını kaydet";
 "Fan" = "Fan";
 "HID sensors" = "HID sensörleri";
-"Synchronize fan's control" = "Fanın kontrolünü senkronize et";
 "Current" = "Akım";
 "Energy" = "Enerji";
 "Show unknown sensors" = "Bilinmeyen sensörleri göster";
-"Install fan helper" = "Fan yardımcısını kur";
-"Uninstall fan helper" = "Fan yardımcısını kaldır";
-"Approve in System Settings ▸ Login Items" = "Sistem Ayarları ▸ Oturum Açma Öğeleri'nde onayla"; // gemma4:31b
-"Fan helper needs your approval" = "Fan yardımcısı onayınızı gerektiriyor"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Fanları kontrol etmek için Stats'ı Sistem Ayarları ▸ Oturum Açma Öğeleri'nde etkinleştirin."; // gemma4:31b
-"Open Login Items" = "Oturum Açma Öğelerini Aç"; // gemma4:31b
-"Could not enable the fan helper" = "Fan yardımcısı etkinleştirilemedi"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Sistem Ayarları ▸ Oturum Açma Öğeleri'ni açın, Stats'ın arka planda izin verildiğinden emin olun, ardından tekrar deneyin."; // gemma4:31b
 "Fan value" = "Fan değeri";
-"Turn off fan" = "Fanı kapat";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Fanı kapatacaksınız. Bu, Mac'inize zarar verebilecek bir eylemdir ve önerilmez. Bunu yapmak istediğinizden emin misiniz?";
 "Sensor threshold" = "Sensör eşiği";
 "Left fan" = "Sol fan";
 "Right fan" = "Sağ fan";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Yükleme";
 "Downloading" = "İndirme";
-"Public IP" = "Açık IP";
 "Local IP" = "Yerel IP";
 "Interface" = "Arayüz";
 "Physical address" = "Fiziksel adres";
@@ -386,24 +368,12 @@
 "Channel" = "Kanal";
 "Autodetection" = "Otomatik algılama";
 "Widget activation threshold" = "Widget aktivasyon eşiği";
-"Internet connection" = "Internet bağlantısı";
-"Connectivity host" = "Bağlantı sunucusu";
-"Leave empty to disable the check" = "Kontrolü devre dışı bırakmak için boş bırakın";
-"Connectivity history" = "Bağlantı geçmişi";
-"Auto-refresh public IP address" = "Açık IP adresi oto-yenile";
-"Every hour" = "Her saat";
-"Every 12 hours" = "Her 12 saat";
-"Every 24 hours" = "Her 24 saat";
 "Last reset" = "Son sıfırlama %0 önce";
-"Latency" = "Gecikme";
 "Address" = "Adres";
 "WiFi network" = "WiFi ağı";
 "Local IP changed" = "Yerel IP değişti";
-"Public IP changed" = "Açık IP değişti";
 "Previous IP" = "Önceki IP: %0";
 "New IP" = "Yeni IP: %0";
-"Internet connection lost" = "İnternet bağlantısı kesildi";
-"Internet connection established" = "İnternet bağlantısı kuruldu";
 "Show country code instead of emoji" = "Emoji yerine ülke kodu göster"; // gemma4:31b
 
 // Battery

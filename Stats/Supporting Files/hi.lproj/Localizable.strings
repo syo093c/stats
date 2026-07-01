@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "ओपन एक्टिविटी मॉनिटर";
-"Report a bug" = "बग की रिपोर्ट करें";
-"Support the application" = "आवेदन का समर्थन करें";
 "Close application" = "आवेदन बंद करें";
 "Open application settings" = "ओपन एप्लिकेशन सेटिंग्स";
 "Open dashboard" = "ओपन डैशबोर्ड";
 "No notifications available in this module" = "इस मॉड्यूल में कोई नोटिफिकेशन उपलब्ध नहीं हैं"; // gemma4:31b
 "Open Calendar" = "कैलेंडर खोलें"; // translategemma:4b
 "Toggle the module" = "मॉड्यूल को टॉगल करें"; // gemma4:31b
-"Open System Stats" = "System Stats खोलें"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "अपडेट की जाँच करें";
 "At start" = "शुरुआत में";
 "Once per day" = "प्रति दिन एक बार";
 "Once per week" = "प्रति सप्ताह एक बार";
 "Once per month" = "प्रति माह एक बार";
 "Never" = "कभी नहीं";
-"Check for update" = "अपडेट की जांच करें";
 "Show icon in dock" = "डॉक में आइकन दिखाएं";
 "Start at login" = "लॉगिन पर शुरू करें";
 "Build number" = "बिल्ड नंबर";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "सेल्सियस";
 "Fahrenheit" = "सेल्सियस";
-"Save the fan speed" = "पंखे की गति बचाएं";
 "Fan" = "फैन";
 "HID sensors" = "एचआईडी सेंसर";
-"Synchronize fan's control" = "प्रशंसक के नियंत्रण को सिंक्रनाइज़ करें";
 "Current" = "वर्तमान";
 "Energy" = "ऊर्जा";
 "Show unknown sensors" = "अज्ञात सेंसर दिखाएं";
-"Install fan helper" = "फैन हेल्पर स्थापित करें";
-"Uninstall fan helper" = "फैन हेल्पर की स्थापना रद्द करें";
-"Approve in System Settings ▸ Login Items" = "सिस्टम सेटिंग्स ▸ लॉगिन आइटम में अनुमोदित करें"; // gemma4:31b
-"Fan helper needs your approval" = "फैन हेल्पर को आपकी अनुमति की आवश्यकता है"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "पंखों को नियंत्रित करने के लिए, सिस्टम सेटिंग्स ▸ लॉगिन आइटम में Stats को सक्षम करें।"; // gemma4:31b
-"Open Login Items" = "लॉगिन आइटम खोलें"; // gemma4:31b
-"Could not enable the fan helper" = "फैन हेल्पर को सक्षम नहीं किया जा सका"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "सिस्टम सेटिंग्स ▸ लॉगिन आइटम खोलें, सुनिश्चित करें कि Stats को बैकग्राउंड में अनुमति दी गई है, फिर से प्रयास करें।"; // gemma4:31b
 "Fan value" = "फैन वैल्यू";
-"Turn off fan" = "पंखा बंद करें";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "आप पंखे को बंद करने जा रहे हैं। यह अनुशंसित कार्रवाई नहीं है जो आपके मैक को नुकसान पहुंचा सकती है, क्या आप वाकई ऐसा करना चाहते हैं?";
 "Sensor threshold" = "सेंसर सीमा"; // gemma4:31b
 "Left fan" = "बायाँ"; // gemma4:31b
 "Right fan" = "दायां"; // gemma4:31b
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "अपलोड";
 "Downloading" = "डाउनलोड";
-"Public IP" = "सार्वजनिक आईपी";
 "Local IP" = "स्थानीय आईपी";
 "Interface" = "इंटरफ़ेस";
 "Physical address" = "भौतिक पता";
@@ -386,24 +368,12 @@
 "Channel" = "चैनल";
 "Autodetection" = "ऑटोडिटेक्शन";
 "Widget activation threshold" = "विजेट सक्रियण सीमा";
-"Internet connection" = "इंटरनेट कनेक्शन";
-"Connectivity host" = "कनेक्टिविटी होस्ट (आईसीएमपी)";
-"Leave empty to disable the check" = "चेक को अक्षम करने के लिए खाली छोड़ दें";
-"Connectivity history" = "कनेक्टिविटी इतिहास";
-"Auto-refresh public IP address" = "ऑटो-रिफ्रेश सार्वजनिक आईपी पता";
-"Every hour" = "हर घंटे";
-"Every 12 hours" = "हर 12 घंटे";
-"Every 24 hours" = "हर 24 घंटे";
 "Last reset" = "अंतिम रीसेट %0 पहले";
-"Latency" = "विलंबता"; // gemma4:31b
 "Address" = "पता"; // translategemma:4b
 "WiFi network" = "WiFi नेटवर्क"; // gemma4:31b
 "Local IP changed" = "स्थानीय IP बदल गया है"; // gemma4:31b
-"Public IP changed" = "पब्लिक IP बदल गया है"; // gemma4:31b
 "Previous IP" = "पिछला IP: %0"; // gemma4:31b
 "New IP" = "नया IP: %0"; // gemma4:31b
-"Internet connection lost" = "इंटरनेट कनेक्शन टूट गया"; // gemma4:31b
-"Internet connection established" = "इंटरनेट कनेक्शन स्थापित हुआ"; // gemma4:31b
 "Show country code instead of emoji" = "इमोजी के बजाय देश का कोड दिखाएं"; // gemma4:31b
 
 // Battery

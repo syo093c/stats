@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Åpne Aktivitetsmonitor";
-"Report a bug" = "Meld en feil";
-"Support the application" = "Støtt programmet";
 "Close application" = "Lukk programmet";
 "Open application settings" = "Åpne programinnstillinger";
 "Open dashboard" = "Åpne dashboard";
 "No notifications available in this module" = "Ingen varsler tilgjengelige i denne modulen"; // gemma4:31b
 "Open Calendar" = "Åpne kalender"; // translategemma:4b
 "Toggle the module" = "Veksle modulen"; // gemma4:31b
-"Open System Stats" = "Åpne System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Se etter oppdateringer";
 "At start" = "Ved oppstart";
 "Once per day" = "Daglig";
 "Once per week" = "Ukentlig";
 "Once per month" = "Månedlig";
 "Never" = "Aldri";
-"Check for update" = "Se etter oppdatering";
 "Show icon in dock" = "Vis ikon i dock";
 "Start at login" = "Start ved innlogging";
 "Build number" = "Byggnummer";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Lagre viftehastighet";
 "Fan" = "Vifte";
 "HID sensors" = "HID-sensorer";
-"Synchronize fan's control" = "Synkroniser viftekontroll";
 "Current" = "Nåværende";
 "Energy" = "Energi";
 "Show unknown sensors" = "Vis ukjente sensorer";
-"Install fan helper" = "Installer viftehjelper";
-"Uninstall fan helper" = "Avinstaller viftehjelper";
-"Approve in System Settings ▸ Login Items" = "Godkjenn i Systeminnstillinger ▸ Innloggingselementer"; // gemma4:31b
-"Fan helper needs your approval" = "Viftehjelperen trenger din godkjenning"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "For å styre viftene, aktiver Stats i Systeminnstillinger ▸ Innloggingselementer."; // gemma4:31b
-"Open Login Items" = "Åpne påloggingselementer"; // gemma4:31b
-"Could not enable the fan helper" = "Kunne ikke aktivere viftehjelperen"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Åpne Systeminnstillinger ▸ Innloggingselementer, sørg for at Stats er tillatt i bakgrunnen, og prøv deretter på nytt."; // gemma4:31b
 "Fan value" = "Vifteverdi";
-"Turn off fan" = "Slå av viften";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Du slå nå av viften. Dette er en ikke-anbefalt handling som kan skade Mac-en din, er du sikker på at vil gjøre dette?";
 "Sensor threshold" = "Sensorterskel"; // gemma4:31b
 "Left fan" = "Venstre"; // translategemma:4b
 "Right fan" = "Høyre"; // gemma4:31b
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Opplasting";
 "Downloading" = "Nedlasting";
-"Public IP" = "Offentlig IP";
 "Local IP" = "Lokal IP";
 "Interface" = "Grensesnitt";
 "Physical address" = "Fysisk addresse";
@@ -386,24 +368,12 @@
 "Channel" = "Kanal";
 "Autodetection" = "Automatisk deteksjon";
 "Widget activation threshold" = "Statistikkaktiveringsgrense";
-"Internet connection" = "Internett-tilkobling";
-"Connectivity host" = "Tilkoblingsvert";
-"Leave empty to disable the check" = "La stå tom for å deaktivere sjekken";
-"Connectivity history" = "Tilkoblingshistorikk";
-"Auto-refresh public IP address" = "Auto-oppfrisk offentlig IP-adresse";
-"Every hour" = "Hver time";
-"Every 12 hours" = "Hver 12. time";
-"Every 24 hours" = "Hver 24. time";
 "Last reset" = "Sist nullstilt %0 siden";
-"Latency" = "Forsinkelse"; // translategemma:4b
 "Address" = "Adresse"; // translategemma:4b
 "WiFi network" = "WiFi-nettverk"; // translategemma:4b
 "Local IP changed" = "Lokal IP har endret seg"; // gemma4:31b
-"Public IP changed" = "Offentlig IP har endret seg"; // gemma4:31b
 "Previous IP" = "Forrige IP: %0"; // gemma4:31b
 "New IP" = "Ny IP: %0"; // translategemma:4b
-"Internet connection lost" = "Mistet internettforbindelse"; // gemma4:31b
-"Internet connection established" = "Internettforbindelse opprettet"; // gemma4:31b
 "Show country code instead of emoji" = "Vis landskode i stedet for emoji"; // gemma4:31b
 
 // Battery

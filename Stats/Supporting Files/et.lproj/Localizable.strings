@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Ava aktiivsusmonitor";
-"Report a bug" = "Teata veast";
-"Support the application" = "Toetage rakendust";
 "Close application" = "Sule rakendus";
 "Open application settings" = "Ava rakenduse seaded";
 "Open dashboard" = "Ava töölaud";
 "No notifications available in this module" = "Selles moodulis pole saadaval teavitusi.";
 "Open Calendar" = "Ava kalender";
 "Toggle the module" = "Lülita moodul sisse";
-"Open System Stats" = "Ava System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Otsi värskendusi";
 "At start" = "Käivitamisel";
 "Once per day" = "Üks kord päevas";
 "Once per week" = "Kord nädalas";
 "Once per month" = "Kord kuus";
 "Never" = "Mitte kunagi";
-"Check for update" = "Otsi värskendusi";
 "Show icon in dock" = "Kuva ikoon dokis";
 "Start at login" = "Käivita sisselogimisest";
 "Build number" = "Järgunumber";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsiuse"; // gemma4:31b
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Salvesta ventilaatori kiirus";
 "Fan" = "Ventilaator";
 "HID sensors" = "HID-andurid";
-"Synchronize fan's control" = "Sünkroniseeri ventilaatori juhtimine";
 "Current" = "Voolutugevus";
 "Energy" = "Energia";
 "Show unknown sensors" = "Näita tundmatuid sensoreid";
-"Install fan helper" = "Installi ventilaatoriabiline";
-"Uninstall fan helper" = "Desinstalli ventilaatoriabiline";
-"Approve in System Settings ▸ Login Items" = "Kinnita Süsteemi seadetes ▸ Sisselogimise üksused"; // gemma4:31b
-"Fan helper needs your approval" = "Ventilaatori abiutill vajab teie heaks kiitmist"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Ventilaatorite juhtimiseks aktiveeri Stats Süsteemi seadetes ▸ Sisselogimise üksused."; // gemma4:31b
-"Open Login Items" = "Ava sisselogimise üksused"; // gemma4:31b
-"Could not enable the fan helper" = "Ei õnnestunud ventilaatori abiutliiti aktiveerida"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Ava Süsteemi seaded ▸ Logimise üksused, veendu, et Stats on lubatud taustal, seejärel proovi uuesti."; // gemma4:31b
 "Fan value" = "Ventilaatori väärtus";
-"Turn off fan" = "Lülita ventilaator välja";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Te kavatstate lülitada ventilator välja. See ei ole soovitatav tegevus, mis võib kahjustada teie Mac-i. Kas olete kindel, et soovite seda teha?";
 "Sensor threshold" = "Sensori piirväärtus";
 "Left fan" = "Vasak ventilaator";
 "Right fan" = "Parem ventilaator";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Üleslaadimine";
 "Downloading" = "Allalaadimine";
-"Public IP" = "Avalik IP";
 "Local IP" = "Kohalik IP";
 "Interface" = "Liides";
 "Physical address" = "Füüsiline aadress";
@@ -386,24 +368,12 @@
 "Channel" = "Kanal";
 "Autodetection" = "Automaattuvastus";
 "Widget activation threshold" = "Vidina aktiveerimise lävi";
-"Internet connection" = "Internetiühendus";
-"Connectivity host" = "Ühendushost";
-"Leave empty to disable the check" = "Kontrolli keelamiseks jätke tühjaks";
-"Connectivity history" = "Ühenduse ajalugu";
-"Auto-refresh public IP address" = "Avaliku IP-aadressi automaatne värskendamine";
-"Every hour" = "Iga tund";
-"Every 12 hours" = "Iga 12 tunni järel";
-"Every 24 hours" = "Iga 24 tunni järel";
 "Last reset" = "Viimane lähtestamine %0 tagasi";
-"Latency" = "Latents";
 "Address" = "Aadress";
 "WiFi network" = "Wifi võrk";
 "Local IP changed" = "Lokaalne IP-aadress on muutunud";
-"Public IP changed" = "Avalik IP-aadress on muutunud";
 "Previous IP" = "Eelmine IP: %0";
 "New IP" = "Uus IP-aadress: %0";
-"Internet connection lost" = "Internetühendus katkenud";
-"Internet connection established" = "Internetühendus on loodud";
 "Show country code instead of emoji" = "Näita emoji asemel riigikoodi";
 
 // Battery

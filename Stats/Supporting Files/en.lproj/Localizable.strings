@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Open Activity Monitor";
-"Report a bug" = "Report a bug";
-"Support the application" = "Support the application";
 "Close application" = "Close application";
 "Open application settings" = "Open application settings";
 "Open dashboard" = "Open dashboard";
 "No notifications available in this module" = "No notifications available in this module";
 "Open Calendar" = "Open Calendar";
 "Toggle the module" = "Toggle the module";
-"Open System Stats" = "Open System Stats";
 
 // Application settings
-"Check for updates" = "Check for updates";
 "At start" = "At start";
 "Once per day" = "Once per day";
 "Once per week" = "Once per week";
 "Once per month" = "Once per month";
 "Never" = "Never";
-"Check for update" = "Check for update";
 "Show icon in dock" = "Show icon in dock";
 "Start at login" = "Start at login";
 "Build number" = "Build number";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Save the fan speed";
 "Fan" = "Fan";
 "HID sensors" = "HID sensors";
-"Synchronize fan's control" = "Synchronize fan's control";
 "Current" = "Current";
 "Energy" = "Energy";
 "Show unknown sensors" = "Show unknown sensors";
-"Install fan helper" = "Install fan helper";
-"Uninstall fan helper" = "Uninstall fan helper";
-"Approve in System Settings ▸ Login Items" = "Approve in System Settings ▸ Login Items";
-"Fan helper needs your approval" = "Fan helper needs your approval";
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "To control the fans, enable Stats in System Settings ▸ Login Items.";
-"Open Login Items" = "Open Login Items";
-"Could not enable the fan helper" = "Could not enable the fan helper";
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again.";
 "Fan value" = "Fan value";
-"Turn off fan" = "Turn off fan";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?";
 "Sensor threshold" = "Sensor threshold";
 "Left fan" = "Left";
 "Right fan" = "Right";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Upload";
 "Downloading" = "Download";
-"Public IP" = "Public IP";
 "Local IP" = "Local IP";
 "Interface" = "Interface";
 "Physical address" = "Physical address";
@@ -386,24 +368,12 @@
 "Channel" = "Channel";
 "Autodetection" = "Autodetection";
 "Widget activation threshold" = "Widget activation threshold";
-"Internet connection" = "Internet connection";
-"Connectivity host" = "Connectivity host";
-"Leave empty to disable the check" = "Leave empty to disable the check";
-"Connectivity history" = "Connectivity history";
-"Auto-refresh public IP address" = "Auto-refresh public IP address";
-"Every hour" = "Every hour";
-"Every 12 hours" = "Every 12 hours";
-"Every 24 hours" = "Every 24 hours";
 "Last reset" = "Last reset %0 ago";
-"Latency" = "Latency";
 "Address" = "Address";
 "WiFi network" = "WiFi network";
 "Local IP changed" = "Local IP has changed";
-"Public IP changed" = "Public IP has changed";
 "Previous IP" = "Previous IP: %0";
 "New IP" = "New IP: %0";
-"Internet connection lost" = "Internet connection lost";
-"Internet connection established" = "Internet connection established";
 "Show country code instead of emoji" = "Show country code instead of emoji";
 
 // Battery

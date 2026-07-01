@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "باز کردن نظارت فعالیت‌ها";
-"Report a bug" = "گزارش باگ";
-"Support the application" = "حمایت از اپلیکیشن";
 "Close application" = "بستن اپلیکیشن";
 "Open application settings" = "بستن تنظیمات اپلیکیشن";
 "Open dashboard" = "باز کردن داشبورد";
 "No notifications available in this module" = "در این ماژول هیچ اعلانی موجود نیست"; // gemma4:31b
 "Open Calendar" = "باز کردن تقویم"; // translategemma:4b
 "Toggle the module" = "تغییر وضعیت ماژول"; // gemma4:31b
-"Open System Stats" = "باز کردن System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "بررسی برای نسخه‌های جدید";
 "At start" = "در زمان شروع";
 "Once per day" = "یک بار در روز";
 "Once per week" = "یک بار در هفته";
 "Once per month" = "یک بار در ماه";
 "Never" = "هیچ وقت";
-"Check for update" = "بررسی برای نسخه‌ی جدید";
 "Show icon in dock" = "نمایش آیکون در داک";
 "Start at login" = "باز شدن در زمان لاگین";
 "Build number" = "شماره ساخت";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "سلسیوس";
 "Fahrenheit" = "فارنهایت";
-"Save the fan speed" = "ذخیره سرعت فن";
 "Fan" = "فن";
 "HID sensors" = "سنسور‌های HID";
-"Synchronize fan's control" = "همگام‌سازی سرعت فن‌ها";
 "Current" = "جریان";
 "Energy" = "انرژی";
 "Show unknown sensors" = "نمایش سنسور‌های ناشناخته";
-"Install fan helper" = "نصب دستیار فن"; // gemma4:31b
-"Uninstall fan helper" = "حذف ابزار کمکی فن"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "در تنظیمات سیستم ▸ موارد ورود تایید کنید"; // gemma4:31b
-"Fan helper needs your approval" = "ابزار کمکی فن به تأیید شما نیاز دارد"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "برای کنترل فن‌ها، Stats را در تنظیمات سیستم ▸ آیتم‌های ورود فعال کنید."; // gemma4:31b
-"Open Login Items" = "باز کردن آیتم‌های ورود"; // gemma4:31b
-"Could not enable the fan helper" = "امکان فعال‌سازی کمک‌کننده فن وجود نداشت"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "تنظیمات سیستم ▸ آیتم‌های ورود را باز کنید، مطمئن شوید که Stats در پس‌زمینه مجاز است، سپس دوباره تلاش کنید."; // gemma4:31b
 "Fan value" = "مقدار فن"; // translategemma:4b
-"Turn off fan" = "خاموش کردن فن"; // gemma4:31b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "شما قصد دارید فن را خاموش کنید. این اقدام توصیه نمی‌شود و می‌تواند به Mac شما آسیب برساند، آیا مطمئن هستید که می‌خواهید این کار را انجام دهید؟"; // gemma4:31b
 "Sensor threshold" = "آستانه حسگر"; // gemma4:31b
 "Left fan" = "چپ"; // translategemma:4b
 "Right fan" = "راست"; // gemma4:31b
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "آپلود";
 "Downloading" = "دانلود";
-"Public IP" = "آی پی عمومی";
 "Local IP" = "آی پی محلی";
 "Interface" = "نوع اتصال";
 "Physical address" = "آدرس فیزیکی";
@@ -386,24 +368,12 @@
 "Channel" = "کانال";
 "Autodetection" = "تشخیص خودکار";
 "Widget activation threshold" = "آستانه فعالسازی ویجت";
-"Internet connection" = "اتصال اینترنت";
-"Connectivity host" = "میزبان اتصال";
-"Leave empty to disable the check" = "خالی بگذارید تا بررسی غیرفعال شود";
-"Connectivity history" = "تاریخچه اتصال"; // translategemma:4b
-"Auto-refresh public IP address" = "به‌روزرسانی خودکار آدرس IP عمومی"; // gemma4:31b
-"Every hour" = "هر ساعت"; // translategemma:4b
-"Every 12 hours" = "هر ۱۲ ساعت"; // translategemma:4b
-"Every 24 hours" = "هر ۲۴ ساعت"; // gemma4:31b
 "Last reset" = "آخرین بازنشانی %0 پیش"; // gemma4:31b
-"Latency" = "تأخیر"; // gemma4:31b
 "Address" = "آدرس"; // translategemma:4b
 "WiFi network" = "شبکه WiFi"; // gemma4:31b
 "Local IP changed" = "IP محلی تغییر کرده است"; // gemma4:31b
-"Public IP changed" = "IP عمومی تغییر کرده است"; // gemma4:31b
 "Previous IP" = "IP قبلی: %0"; // gemma4:31b
 "New IP" = "IP جدید: %0"; // gemma4:31b
-"Internet connection lost" = "اتصال به اینترنت قطع شد"; // gemma4:31b
-"Internet connection established" = "اتصال اینترنت برقرار شد"; // translategemma:4b
 "Show country code instead of emoji" = "نمایش کد کشور به جای ایموجی"; // gemma4:31b
 
 // Battery

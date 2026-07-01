@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Tevékenységfigyelő megnyitása";
-"Report a bug" = "Probléma jelentése";
-"Support the application" = "Támogasd az alkalmazás fejlesztését";
 "Close application" = "Alkalmazás bezárása";
 "Open application settings" = "Beállítások megnyitása";
 "Open dashboard" = "Irányítópult megnyitása";
 "No notifications available in this module" = "Nincsenek elérhető értesítések ebben a modulban";
 "Open Calendar" = "Naptár megnyitása"; // gemma4:31b
 "Toggle the module" = "Kapcsolja a modult"; // gemma4:31b
-"Open System Stats" = "System Stats megnyitása"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Frissítések keresése";
 "At start" = "Induláskor";
 "Once per day" = "Naponta";
 "Once per week" = "Hetente";
 "Once per month" = "Havonta";
 "Never" = "Soha";
-"Check for update" = "Frissítés keresése";
 "Show icon in dock" = "Ikon megjelenítése a Dockban";
 "Start at login" = "Alkalmazás indítása bejelentkezéskor";
 "Build number" = "Verziószám";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsziusz"; // gemma4:31b
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Ventilátor sebesség mentése";
 "Fan" = "Ventilátor";
 "HID sensors" = "HID szenzorok";
-"Synchronize fan's control" = "Ventilátor vezérlés szinkronizálása";
 "Current" = "Áramerősség";
 "Energy" = "Energia";
 "Show unknown sensors" = "Ismeretlen szenzorok megjelenítése";
-"Install fan helper" = "Ventilátor segítő telepítése";
-"Uninstall fan helper" = "Ventilátor segítő törlése";
-"Approve in System Settings ▸ Login Items" = "Hagyja jóvá a Rendszerbeállítások ▸ Bejelentkezési elemek"; // gemma4:31b
-"Fan helper needs your approval" = "A ventilátor-segédprogramnak szükség van az Ön jóváhagyására"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "A ventilátorok vezérléséhez engedélyezze a Stats-t a Rendszerbeállítások ▸ Bejelentkezési elemekben."; // gemma4:31b
-"Open Login Items" = "Nyisd meg a bejelentkezési elemeket"; // gemma4:31b
-"Could not enable the fan helper" = "Nem sikerült aktiválni a ventilátor segédprogramot"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Nyissa meg a Rendszerbeállítások ▸ Bejelentkezési elemek menüt, győződjön meg róla, hogy a Stats engedélyezve van a háttérben, majd próbálja újra."; // gemma4:31b
 "Fan value" = "Ventilátor érték";
-"Turn off fan" = "Ventilátor kikapcsolása";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "A ventilátor ki lesz kapcsolva. Ez a művelet károsíthatja a macjét, ezért nem ajánlott. Biztosan ki akarja kapcsolni a ventilátort?";
 "Sensor threshold" = "Szenzor küszöb";
 "Left fan" = "Bal ventilátor";
 "Right fan" = "Jobb ventilátor";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Feltöltés";
 "Downloading" = "Letöltés";
-"Public IP" = "Publikus IP";
 "Local IP" = "Helyi IP";
 "Interface" = "Interfész";
 "Physical address" = "Fizikai cím";
@@ -386,24 +368,12 @@
 "Channel" = "Csatorna";
 "Autodetection" = "Automatikus észlelés";
 "Widget activation threshold" = "Widget aktivációs küszöbe";
-"Internet connection" = "Internet kapcsolat";
-"Connectivity host" = "Kapcsolati gazdagép";
-"Leave empty to disable the check" = "Hagyd üresen az ellenőrzés kikapcsolásához";
-"Connectivity history" = "Kapcsolati előzmények";
-"Auto-refresh public IP address" = "Publikus IP cím automatikus frissítése";
-"Every hour" = "Óránként";
-"Every 12 hours" = "12 óránként";
-"Every 24 hours" = "24 óránként";
 "Last reset" = "Utolsó visszaállítás óta eltelt idő: %0";
-"Latency" = "Látencia"; // gemma4:31b
 "Address" = "Cím"; // translategemma:4b
 "WiFi network" = "WiFi hálózat"; // translategemma:4b
 "Local IP changed" = "A lokális IP megváltozott"; // gemma4:31b
-"Public IP changed" = "A nyilvános IP-cím megváltozott"; // gemma4:31b
 "Previous IP" = "Előző IP-cím: %0"; // gemma4:31b
 "New IP" = "Új IP-cím: %0"; // gemma4:31b
-"Internet connection lost" = "Internetkapcsolat megszakadt"; // gemma4:31b
-"Internet connection established" = "Internetkapcsolat létrehozva"; // gemma4:31b
 "Show country code instead of emoji" = "Mutassa az országkódot az emoji helyett"; // gemma4:31b
 
 // Battery

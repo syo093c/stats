@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "فتح مراقب النشاط";
-"Report a bug" = "الإبلاغ عن خطأ";
-"Support the application" = "دعم التطبيق";
 "Close application" = "إغلاق التطبيق";
 "Open application settings" = "فتح إعدادات التطبيق";
 "Open dashboard" = "فتح لوحة التحكم";
 "No notifications available in this module" = "لا توجد إشعارات متاحة في هذه الوحدة";
 "Open Calendar" = "فتح التقويم"; // translategemma:4b
 "Toggle the module" = "تبديل الوحدة"; // gemma4:31b
-"Open System Stats" = "فتح System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "التحقق من وجود تحديثات";
 "At start" = "عند البدء";
 "Once per day" = "مرة يوميًا";
 "Once per week" = "مرة أسبوعيًا";
 "Once per month" = "مرة شهريًا";
 "Never" = "أبدًا";
-"Check for update" = "التحقق من وجود تحديث";
 "Show icon in dock" = "إظهار الرمز في القائمة";
 "Start at login" = "بدء التشغيل عند تسجيل الدخول";
 "Build number" = "رقم الإصدار";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "درجة مئوية";
 "Fahrenheit" = "فهرنهايت";
-"Save the fan speed" = "حفظ سرعة المروحة";
 "Fan" = "مروحة";
 "HID sensors" = "مستشعرات HID";
-"Synchronize fan's control" = "مزامنة تحكم المروحة";
 "Current" = "الحالي";
 "Energy" = "الطاقة";
 "Show unknown sensors" = "عرض المستشعرات غير المعروفة";
-"Install fan helper" = "تثبيت مساعد المروحة";
-"Uninstall fan helper" = "إلغاء تثبيت مساعد المروحة";
-"Approve in System Settings ▸ Login Items" = "وافق في إعدادات النظام ▸ عناصر تسجيل الدخول"; // gemma4:31b
-"Fan helper needs your approval" = "مساعد المروحة يتطلب موافقتك"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "للتحكم في المراوح، قم بتفعيل Stats في إعدادات النظام ▸ عناصر تسجيل الدخول."; // gemma4:31b
-"Open Login Items" = "فتح عناصر تسجيل الدخول"; // gemma4:31b
-"Could not enable the fan helper" = "تعذر تفعيل مساعد المروحة"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "افتح إعدادات النظام ▸ عناصر تسجيل الدخول، وتأكد من السماح لـ Stats في الخلفية، ثم حاول مرة أخرى."; // gemma4:31b
 "Fan value" = "قيمة المروحة";
-"Turn off fan" = "إيقاف تشغيل المروحة";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "أنت على وشك إيقاف تشغيل المروحة. هذا ليس إجراءً مُوصى به يمكن أن يتسبب في تلف جهازك، هل تريد بالتأكيد القيام بذلك؟";
 "Sensor threshold" = "عتبة المستشعر";
 "Left fan" = "المروحة اليسرى";
 "Right fan" = "المروحة اليمنى";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "تحميل";
 "Downloading" = "تنزيل";
-"Public IP" = "عنوان IP العام";
 "Local IP" = "عنوان IP المحلي";
 "Interface" = "واجهة";
 "Physical address" = "العنوان الفيزيائي";
@@ -386,24 +368,12 @@
 "Channel" = "قناة";
 "Autodetection" = "الكشف التلقائي";
 "Widget activation threshold" = "عتبة تنشيط الودجة";
-"Internet connection" = "اتصال بالإنترنت";
-"Connectivity host" = "مضيف الاتصال";
-"Leave empty to disable the check" = "اتركه فارغًا لتعطيل الفحص";
-"Connectivity history" = "سجل الاتصال";
-"Auto-refresh public IP address" = "تحديث تلقائي لعنوان IP العام";
-"Every hour" = "كل ساعة";
-"Every 12 hours" = "كل 12 ساعة";
-"Every 24 hours" = "كل 24 ساعة";
 "Last reset" = "آخر إعادة تعيين منذ %0";
-"Latency" = "تأخير";
 "Address" = "العنوان"; // translategemma:4b
 "WiFi network" = "شبكة WiFi"; // gemma4:31b
 "Local IP changed" = "تغير عنوان IP المحلي"; // translategemma:4b
-"Public IP changed" = "تم تغيير عنوان IP العام"; // gemma4:31b
 "Previous IP" = "عنوان IP السابق: %0"; // translategemma:4b
 "New IP" = "عنوان IP جديد: %0"; // gemma4:31b
-"Internet connection lost" = "فُقد الاتصال بالإنترنت"; // gemma4:31b
-"Internet connection established" = "تم إنشاء اتصال بالإنترنت"; // translategemma:4b
 "Show country code instead of emoji" = "إظهار رمز الدولة بدلاً من الرموز التعبيرية"; // gemma4:31b
 
 // Battery

@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Obre el Visor d'Activitat";
-"Report a bug" = "Reporta un problema";
-"Support the application" = "Suporta l'aplicació";
 "Close application" = "Tanca l'aplicació";
 "Open application settings" = "Obre la configuració de l'aplicació";
 "Open dashboard" = "Obre el panell";
 "No notifications available in this module" = "No hi ha notificacions disponibles en aquest mòdul"; // gemma4:31b
 "Open Calendar" = "Obrir el calendari"; // gemma4:31b
 "Toggle the module" = "Alternar el mòdul"; // gemma4:31b
-"Open System Stats" = "Obrir System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Busca actualitzacions";
 "At start" = "A l'inici";
 "Once per day" = "Un cop al dia";
 "Once per week" = "Un cop per setmana";
 "Once per month" = "Un cop al mes";
 "Never" = "Mai";
-"Check for update" = "Busca actualitzacions";
 "Show icon in dock" = "Mostra l'icona al Dock";
 "Start at login" = "Arranca al iniciar sessió";
 "Build number" = "Número de Build";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Gra Celsius"; // translategemma:4b
-"Save the fan speed" = "Guarda la velocitat del ventilador";
 "Fan" = "Ventilador";
 "HID sensors" = "Sensors HID";
-"Synchronize fan's control" = "Sincronitza el control del ventilador";
 "Current" = "Corrent";
 "Energy" = "Energia";
 "Show unknown sensors" = "Mostra sensors desconeguts";
-"Install fan helper" = "Instal·la l'ajuda del ventilador";
-"Uninstall fan helper" = "Desinstal·la l'ajuda del ventilador";
-"Approve in System Settings ▸ Login Items" = "Aprova a Ajustos del sistema ▸ Elements d'inici"; // gemma4:31b
-"Fan helper needs your approval" = "L'ajudant del ventilador necessita la teva aprovació"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Per controlar els ventiladors, activa Stats als Ajustos del sistema ▸ Elements d'inici."; // gemma4:31b
-"Open Login Items" = "Obre els elements d'inici"; // gemma4:31b
-"Could not enable the fan helper" = "No s'ha pogut activar l'ajudant del ventilador"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Obre els Ajustes del sistema ▸ Elementes d'inici, assegura't que Stats estigui permès en segon pla i després torna-ho a intentar."; // gemma4:31b
 "Fan value" = "Valor del ventilador";
-"Turn off fan" = "Apaga el ventilador";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Estàs a punt d'apagar el ventilador. No està recomanat i pot espatllar el teu mac, estàs segur/segura que vols fer això?";
 "Sensor threshold" = "Límit del sensor";
 "Left fan" = "Ventilador esquerre";
 "Right fan" = "Ventilador dret";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Carregant";
 "Downloading" = "Baixant";
-"Public IP" = "IP Pública";
 "Local IP" = "IP Local";
 "Interface" = "Interfície";
 "Physical address" = "Direcció física";
@@ -386,24 +368,12 @@
 "Channel" = "Canal";
 "Autodetection" = "Autodetecció";
 "Widget activation threshold" = "Límit d'activació del giny";
-"Internet connection" = "Connexió a internet";
-"Connectivity host" = "Connectivitat host";
-"Leave empty to disable the check" = "Deixa en blanc per desactivar el check";
-"Connectivity history" = "Historial de connectivitat";
-"Auto-refresh public IP address" = "Refresca automàticament l'adreça pública IP";
-"Every hour" = "Cada hora";
-"Every 12 hours" = "Cada 12 hores";
-"Every 24 hours" = "Cada 24 hores";
 "Last reset" = "L'últim reinici va ser fa %0";
-"Latency" = "Latència";
 "Address" = "Adreça"; // translategemma:4b
 "WiFi network" = "Xarxa WiFi"; // gemma4:31b
 "Local IP changed" = "L'IP local ha canviat"; // gemma4:31b
-"Public IP changed" = "L'IP pública ha canviat"; // gemma4:31b
 "Previous IP" = "IP anterior: %0"; // gemma4:31b
 "New IP" = "Nova IP: %0"; // translategemma:4b
-"Internet connection lost" = "Connexió a Internet perduda"; // gemma4:31b
-"Internet connection established" = "Connexió a internet establida"; // gemma4:31b
 "Show country code instead of emoji" = "Mostrar el codi de país en lloc de l'emoji"; // gemma4:31b
 
 // Battery

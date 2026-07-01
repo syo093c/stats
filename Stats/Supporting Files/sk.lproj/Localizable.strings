@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Otvoriť Monitor aktivity";
-"Report a bug" = "Nahlásiť chybu";
-"Support the application" = "Podporte aplikáciu";
 "Close application" = "Zavrieť aplikáciu";
 "Open application settings" = "Otvoriť nastavenie aplikácie";
 "Open dashboard" = "Otvoriť ovládací panel";
 "No notifications available in this module" = "V tomto module nie sú k dispozícii žiadne oznámenia"; // gemma4:31b
 "Open Calendar" = "Otvoriť kalendár"; // translategemma:4b
 "Toggle the module" = "Prepnúť modul"; // gemma4:31b
-"Open System Stats" = "Otvoriť System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Skontrolovať aktualizácie";
 "At start" = "Pri štarte";
 "Once per day" = "Raz denne";
 "Once per week" = "Raz týždenne";
 "Once per month" = "Raz mesačne";
 "Never" = "Nikdy";
-"Check for update" = "Skontrolovať aktualizáciu";
 "Show icon in dock" = "Zobrazovať ikonu v Docku";
 "Start at login" = "Spustiť po prihlásení";
 "Build number" = "Číslo buildu";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celzius"; // gemma4:31b
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Uložiť rýchlosť ventilátora"; // gemma4:31b
 "Fan" = "Ventilátor"; // gemma4:31b
 "HID sensors" = "HID senzory"; // gemma4:31b
-"Synchronize fan's control" = "Synchronizovať ovládanie ventilátorov"; // gemma4:31b
 "Current" = "Prúd"; // gemma4:31b
 "Energy" = "Energia"; // gemma4:31b
 "Show unknown sensors" = "Zobraziť neznáme senzory"; // gemma4:31b
-"Install fan helper" = "Inštalovať pomocníka pre ventilátor"; // gemma4:31b
-"Uninstall fan helper" = "Odinštalovať pomocníka pre ventilátor"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "Schváliť v Systemových nastaveniach ▸ Položky pri prihlasovaní"; // gemma4:31b
-"Fan helper needs your approval" = "Pomocník ventilátora potrebuje váš súhlas"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Ak chcete ovládať ventilátory, zapnite Stats v Systemových nastaveniach ▸ Položky pri prihlasovaní."; // gemma4:31b
-"Open Login Items" = "Otvoriť položky pri prihlasovaní"; // gemma4:31b
-"Could not enable the fan helper" = "Nebolo možné zapnúť pomocný nástroj pre ventilátor"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Otvorte Nastavenia systému ▸ Položky pri prihlasovaní, uistite sa, že je Stats povolený v pozadí, a potom skúste znova."; // gemma4:31b
 "Fan value" = "Hodnota ventilátora"; // gemma4:31b
-"Turn off fan" = "Vypnúť ventilátor"; // gemma4:31b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Chystáte sa vypnúť ventilátor. Toto je neodporúčaná akcia, ktorá môže poškodiť váš Mac, ste si istý, že to chcete urobiť?"; // gemma4:31b
 "Sensor threshold" = "Prah senzora"; // gemma4:31b
 "Left fan" = "Ľavý"; // gemma4:31b
 "Right fan" = "Pravý"; // gemma4:31b
@@ -368,7 +351,6 @@
 "Uploading" = "Upload";
 "Uploading" = "Nahrávanie"; // gemma4:31b
 "Downloading" = "Sťahovanie"; // gemma4:31b
-"Public IP" = "Verejná IP"; // gemma4:31b
 "Local IP" = "Lokálna IP"; // gemma4:31b
 "Interface" = "Rozhranie"; // gemma4:31b
 "Physical address" = "Fyzická adresa"; // gemma4:31b
@@ -386,27 +368,14 @@
 "Channel" = "Kanál"; // gemma4:31b
 "Autodetection" = "Autodetekcia"; // gemma4:31b
 "Widget activation threshold" = "Prah aktivácie vidžetu"; // gemma4:31b
-"Internet connection" = "Internetové pripojenie"; // gemma4:31b
-"Connectivity host" = "Host pripojenia"; // gemma4:31b
-"Leave empty to disable the check" = "Nechajte prázdne, aby ste deaktivovali kontrolu"; // gemma4:31b
-"Connectivity history" = "História pripojenia"; // gemma4:31b
-"Auto-refresh public IP address" = "Automatické aktualizovanie verejnej IP adresy"; // gemma4:31b
-"Every hour" = "Každú hodinu"; // gemma4:31b
-"Every 12 hours" = "Každé 12 hodín"; // gemma4:31b
-"Every 24 hours" = "Každých 24 hodín"; // gemma4:31b
 "Last reset" = "Posledný reset pred %0"; // gemma4:31b
-"Latency" = "Latencia"; // gemma4:31b
 "Address" = "Adresa"; // gemma4:31b
 "WiFi network" = "Sieť WiFi"; // gemma4:31b
 "Local IP changed" = "Lokálna IP sa zmenila"; // gemma4:31b
-"Public IP changed" = "Verejná IP adresa sa zmenila"; // gemma4:31b
 "Previous IP" = "Predošlá IP: %0"; // gemma4:31b
 "New IP" = "Nová IP adresa: %0"; // gemma4:31b
-"Internet connection lost" = "Internetové pripojenie bolo stratené"; // gemma4:31b
-"Internet connection established" = "Internetové pripojenie nadviazané"; // gemma4:31b
 "Show country code instead of emoji" = "Zobrazovať kód krajiny namiesto emoji"; // gemma4:31b
 "Fahrenheit" = "Farenhajm"; // translategemma:4b
-"Save the fan speed" = "Uložiť rýchlosť ventilátora";
 "Source" = "Zdroj"; // gemma4:31b
 "AC Power" = "Sieťové napájanie"; // gemma4:31b
 "Battery Power" = "Napájanie batériou"; // gemma4:31b
@@ -445,7 +414,6 @@
 "Fan" = "Ventilátor";
 "HID sensors" = "HID senzory";
 "No Bluetooth devices are available" = "Žiadne Bluetooth zariadenia nie sú k dispozícii"; // gemma4:31b
-"Synchronize fan's control" = "Synchronizácia ovládania ventilátora";
 "Current" = "Prúd";
 "Time zone" = "Časové pásmo"; // gemma4:31b
 "Local" = "Lokálny"; // gemma4:31b
@@ -491,11 +459,7 @@
 "Pink" = "Ružová"; // gemma4:31b
 "Teal" = "Tyrkysová"; // gemma4:31b
 "Indigo" = "Indigo";
-"Install fan helper" = "Inštalácia pomocníka pre ventilátor";
-"Uninstall fan helper" = "Odinštalácia pomocníka ventilátora";
 "Fan value" = "Otáčky ventilátora";
-"Turn off fan" = "Vypnite ventilátor"; // translategemma:4b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Chystáte sa vypnúť ventilátor. Toto nie je odporúčaná akcia, ktorá môže poškodiť váš Mac. Ste si istí, že to chcete urobiť?"; // translategemma:4b
 "Sensor threshold" = "Hranica detekčného senzora"; // translategemma:4b
 "Left fan" = "Vľavo"; // translategemma:4b
 "Right fan" = "Správne"; // translategemma:4b
@@ -505,7 +469,6 @@
 // Network
 "Uploading" = "Nahrávanie (upload)";
 "Downloading" = "Sťahovanie (download)";
-"Public IP" = "Verejná IP";
 "Local IP" = "Lokálna IP";
 "Interface" = "Rozhranie";
 "Physical address" = "Fyzická adresa";
@@ -523,24 +486,12 @@
 "Channel" = "Kanál";
 "Autodetection" = "Automatická detekcia";
 "Widget activation threshold" = "Prah aktivácie widgetu";
-"Internet connection" = "Pripojenie k internetu";
-"Connectivity host" = "Hostiteľ pripojenia";
-"Leave empty to disable the check" = "Ponechajte prázdne, ak chcete vypnúť kontrolu";
-"Connectivity history" = "História pripojenosti"; // translategemma:4b
-"Auto-refresh public IP address" = "Automatické obnovenie verejnej IP adresy"; // translategemma:4b
-"Every hour" = "Každú hodinu"; // translategemma:4b
-"Every 12 hours" = "Každých 12 hodín"; // translategemma:4b
-"Every 24 hours" = "Každých 24 hodín"; // translategemma:4b
 "Last reset" = "Posledné zresetovanie bolo pred %0 dňami."; // translategemma:4b
-"Latency" = "Latencia"; // translategemma:4b
 "Address" = "Adresa"; // translategemma:4b
 "WiFi network" = "WiFi sieť"; // translategemma:4b
 "Local IP changed" = "Lokálna IP adresa bola zmenená"; // translategemma:4b
-"Public IP changed" = "Veľmi verejná IP adresa bola zmenená"; // translategemma:4b
 "Previous IP" = "Predchádzajúci IP: %0"; // translategemma:4b
 "New IP" = "Nová IP: %0"; // translategemma:4b
-"Internet connection lost" = "Ztráta internetového pripojenia"; // translategemma:4b
-"Internet connection established" = "Pripojenie k internetu bolo vytvorené"; // translategemma:4b
 "Show country code instead of emoji" = "Zobrazte kód krajiny namiesto emoji"; // translategemma:4b
 
 // Battery

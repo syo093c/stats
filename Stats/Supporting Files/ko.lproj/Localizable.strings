@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "활동 모니터 열기";
-"Report a bug" = "버그 보고";
-"Support the application" = "애플리케이션 후원";
 "Close application" = "애플리케이션 닫기";
 "Open application settings" = "애플리케이션 설정 열기";
 "Open dashboard" = "대시보드 열기";
 "No notifications available in this module" = "이 모듈에서 사용할 수 있는 알림이 없습니다";
 "Open Calendar" = "캘린더 열기";
 "Toggle the module" = "모듈 전환";
-"Open System Stats" = "System Stats 열기"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "업데이트 확인";
 "At start" = "시작할 때";
 "Once per day" = "하루에 한 번";
 "Once per week" = "일주일에 한 번";
 "Once per month" = "한 달에 한 번";
 "Never" = "확인하지 않음";
-"Check for update" = "업데이트 확인";
 "Show icon in dock" = "Dock에 아이콘 표시";
 "Start at login" = "로그인 시 시작";
 "Build number" = "빌드 번호";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "섭씨";
 "Fahrenheit" = "화씨";
-"Save the fan speed" = "팬 속도 저장";
 "Fan" = "팬";
 "HID sensors" = "HID 센서";
-"Synchronize fan's control" = "팬 제어 동기화";
 "Current" = "전류";
 "Energy" = "에너지";
 "Show unknown sensors" = "알 수 없는 센서 표시";
-"Install fan helper" = "팬 헬퍼 설치";
-"Uninstall fan helper" = "팬 헬퍼 제거";
-"Approve in System Settings ▸ Login Items" = "시스템 설정 ▸ 로그인 항목에서 승인"; // gemma4:31b
-"Fan helper needs your approval" = "팬 헬퍼 승인이 필요합니다"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "팬을 제어하려면 시스템 설정 ▸ 로그인 항목에서 Stats를 활성화하세요."; // gemma4:31b
-"Open Login Items" = "로그인 항목 열기"; // gemma4:31b
-"Could not enable the fan helper" = "팬 헬퍼를 활성화할 수 없습니다"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "시스템 설정 ▸ 로그인 항목을 열고, Stats가 백그라운드에서 허용되었는지 확인한 후 다시 시도하십시오."; // gemma4:31b
 "Fan value" = "팬 값";
-"Turn off fan" = "팬 끄기";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "팬을 끄려고 합니다. 팬을 끄는 행위는 Mac을 손상시킬 수 있으므로 권장하지 않습니다. 정말 팬을 끄겠습니까?";
 "Sensor threshold" = "센서 임계값"; // translategemma:4b
 "Left fan" = "왼쪽 팬";
 "Right fan" = "오른쪽 팬";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "업로드";
 "Downloading" = "다운로드";
-"Public IP" = "공개 IP";
 "Local IP" = "로컬 IP";
 "Interface" = "인터페이스";
 "Physical address" = "MAC 주소";
@@ -386,24 +368,12 @@
 "Channel" = "채널";
 "Autodetection" = "자동 감지";
 "Widget activation threshold" = "위젯 활성화 임계값";
-"Internet connection" = "인터넷 연결";
-"Connectivity host" = "연결성 확인 호스트";
-"Leave empty to disable the check" = "연결성 확인을 비활성화하려면 이 란을 비워 두세요";
-"Connectivity history" = "연결성 기록";
-"Auto-refresh public IP address" = "공개 IP주소 자동으로 새로고침";
-"Every hour" = "매 시간마다";
-"Every 12 hours" = "12시간마다";
-"Every 24 hours" = "24시간마다";
 "Last reset" = "마지막 초기화 이후 %0 경과";
-"Latency" = "레이턴시";
 "Address" = "주소"; // translategemma:4b
 "WiFi network" = "WiFi 네트워크";
 "Local IP changed" = "로컬 IP가 변경되었습니다"; // gemma4:31b
-"Public IP changed" = "공인 IP가 변경되었습니다"; // gemma4:31b
 "Previous IP" = "이전 IP: %0"; // translategemma:4b
 "New IP" = "새로운 IP: %0"; // gemma4:31b
-"Internet connection lost" = "인터넷 연결 끊김"; // gemma4:31b
-"Internet connection established" = "인터넷 연결이 설정되었습니다"; // gemma4:31b
 "Show country code instead of emoji" = "이모티콘 대신 국가 코드 표시하기";
 
 // Battery

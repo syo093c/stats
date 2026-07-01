@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Aktivitätsanzeige öffnen";
-"Report a bug" = "Fehler melden";
-"Support the application" = "Die App unterstützen";
 "Close application" = "App schließen";
 "Open application settings" = "App-Einstellungen öffnen";
 "Open dashboard" = "Dashboard öffnen";
 "No notifications available in this module" = "In diesem Modul sind keine Benachrichtigungen verfügbar";
 "Open Calendar" = "Kalender öffnen";
 "Toggle the module" = "Modul umschalten";
-"Open System Stats" = "System Stats öffnen"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Nach Updates suchen";
 "At start" = "Beim Start";
 "Once per day" = "Einmal pro Tag";
 "Once per week" = "Einmal pro Woche";
 "Once per month" = "Einmal pro Monat";
 "Never" = "Nie";
-"Check for update" = "Nach Update suchen";
 "Show icon in dock" = "Symbol im Dock anzeigen";
 "Start at login" = "Bei Anmeldung starten";
 "Build number" = "Build-Nummer";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Lüftergeschwindigkeit speichern";
 "Fan" = "Lüfter";
 "HID sensors" = "HID-Sensoren";
-"Synchronize fan's control" = "Lüftersteuerung synchronisieren";
 "Current" = "Strom";
 "Energy" = "Energie";
 "Show unknown sensors" = "Unbekannte Sensoren anzeigen";
-"Install fan helper" = "Lüfter-Hilfsprogramm installieren";
-"Uninstall fan helper" = "Lüfter-Hilfsprogramm deinstallieren";
-"Approve in System Settings ▸ Login Items" = "Bestätigen in den Systemeinstellungen ▸ Anmeldeobjekte"; // gemma4:31b
-"Fan helper needs your approval" = "Lüfter-Hilfsprogramm benötigt Ihre Zustimmung"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Um die Lüfter zu steuern, aktivieren Sie Stats in den Systemeinstellungen ▸ Anmeldeobjekte."; // gemma4:31b
-"Open Login Items" = "Anmeldeobjekte öffnen"; // gemma4:31b
-"Could not enable the fan helper" = "Konnte den Lüfter-Helper nicht aktivieren"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Öffne die Systemeinstellungen ▸ Anmeldeobjekte, stelle sicher, dass Stats im Hintergrund erlaubt ist, und versuche es dann erneut."; // gemma4:31b
 "Fan value" = "Lüfterwert";
-"Turn off fan" = "Lüfter ausschalten";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Sie sind dabei, den Lüfter auszuschalten. Dies ist keine empfohlene Aktion und kann Ihren Mac beschädigen. Sind Sie sicher, dass Sie das tun möchten?";
 "Sensor threshold" = "Sensorschwelle";
 "Left fan" = "Links";
 "Right fan" = "Rechts";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Hochladen"; // translategemma:4b
 "Downloading" = "Herunterladen"; // translategemma:4b
-"Public IP" = "Öffentliche IP";
 "Local IP" = "Lokale IP";
 "Interface" = "Schnittstelle";
 "Physical address" = "Physische Adresse";
@@ -386,24 +368,12 @@
 "Channel" = "Kanal";
 "Autodetection" = "Automatische Erkennung";
 "Widget activation threshold" = "Widget-Aktivierungsschwelle";
-"Internet connection" = "Internetverbindung";
-"Connectivity host" = "Verbindungshost";
-"Leave empty to disable the check" = "Leer lassen, um die Prüfung zu deaktivieren";
-"Connectivity history" = "Verbindungsverlauf";
-"Auto-refresh public IP address" = "Öffentliche IP-Adresse automatisch aktualisieren";
-"Every hour" = "Jede Stunde";
-"Every 12 hours" = "Alle 12 Stunden";
-"Every 24 hours" = "Alle 24 Stunden";
 "Last reset" = "Letzte Zurücksetzung vor %0";
-"Latency" = "Latenz";
 "Address" = "Adresse";
 "WiFi network" = "WLAN-Netzwerk";
 "Local IP changed" = "Lokale IP hat sich geändert";
-"Public IP changed" = "Öffentliche IP hat sich geändert";
 "Previous IP" = "Vorherige IP: %0";
 "New IP" = "Neue IP: %0";
-"Internet connection lost" = "Internetverbindung unterbrochen";
-"Internet connection established" = "Internetverbindung hergestellt";
 "Show country code instead of emoji" = "Ländercode statt Emoji anzeigen"; // gemma4:31b
 
 // Battery

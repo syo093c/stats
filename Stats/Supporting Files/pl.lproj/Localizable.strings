@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Otwórz Monitor Aktywności";
-"Report a bug" = "Zgłoś problem";
-"Support the application" = "Wesprzyj rozwój programu";
 "Close application" = "Zamknij program";
 "Open application settings" = "Otwórz ustawienia";
 "Open dashboard" = "Otwórz dashboard";
 "No notifications available in this module" = "W tym module nie są dostępne żadne powiadomienia";
 "Open Calendar" = "Otwórz kalendarz";
 "Toggle the module" = "Przełącz moduł";
-"Open System Stats" = "Otworzyć System Stats";
 
 // Application settings
-"Check for updates" = "Sprawdzaj aktualizacje";
 "At start" = "Przy uruchomieniu";
 "Once per day" = "Raz dziennie";
 "Once per week" = "Raz w tygodniu";
 "Once per month" = "Raz w miesiącu";
 "Never" = "Nigdy";
-"Check for update" = "Sprawdź aktualizacje";
 "Show icon in dock" = "Pokazuj ikonę w docku";
 "Start at login" = "Uruchom przy logowaniu";
 "Build number" = "Numer kompilacji";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsjusz";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Zapisz prędkość wentylatora";
 "Fan" = "Wentylator";
 "HID sensors" = "Czujniki HID";
-"Synchronize fan's control" = "Synchronizuj sterowanie wentylatorami";
 "Current" = "Prąd";
 "Energy" = "Energia";
 "Show unknown sensors" = "Pokaż nieznane czujniki";
-"Install fan helper" = "Zainstaluj narzędzie do wentylatora";
-"Uninstall fan helper" = "Odinstaluj narzędzie do wentylatora";
-"Approve in System Settings ▸ Login Items" = "Zatwierdź w Ustawieniach systemowych ▸ Elementy logowania";
-"Fan helper needs your approval" = "Narzędzie do wentylatora potrzebuje zgody";
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Aby sterować wentylatorami, włącz Stats w Ustawieniach systemowych ▸ Elementy logowania.";
-"Open Login Items" = "Otwórz elementy logowania";
-"Could not enable the fan helper" = "Nie można włączyć narzędzia do wentylatora";
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Otwórz Ustawienia systemowe ▸ Elementy logowania, upewnij się, że Stats są dozwolone w tle, a następnie spróbuj ponownie.";
 "Fan value" = "Wartość wentylatora";
-"Turn off fan" = "Wyłączyć wentylator";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Zamierzasz wyłączyć wentylator. To nie jest zalecana czynność, która może spowodować uszkodzenie komputera Mac. Czy na pewno chcesz to zrobić?";
 "Sensor threshold" = "Próg czujnika";
 "Left fan" = "Lewy";
 "Right fan" = "Prawy";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Wysyłanie";
 "Downloading" = "Pobieranie";
-"Public IP" = "Publiczny IP";
 "Local IP" = "Lokalny IP";
 "Interface" = "Interfejs";
 "Physical address" = "Adres fizyczny";
@@ -386,24 +368,12 @@
 "Channel" = "Kanał";
 "Autodetection" = "Autodetekcja";
 "Widget activation threshold" = "Próg aktywacji widżetu";
-"Internet connection" = "Połączenie internetowe";
-"Connectivity host" = "Host łączności";
-"Leave empty to disable the check" = "Pozostaw puste, aby wyłączyć sprawdzanie";
-"Connectivity history" = "Historia łączności";
-"Auto-refresh public IP address" = "Automatyczne odświeżanie adresu IP";
-"Every hour" = "Co godzinę";
-"Every 12 hours" = "Co 12 godzin";
-"Every 24 hours" = "Co 24 godzin";
 "Last reset" = "Ostatni reset %0 temu";
-"Latency" = "Opóźnienie";
 "Address" = "Adres";
 "WiFi network" = "Sieć WiFi";
 "Local IP changed" = "Lokalny adres IP został zmieniony";
-"Public IP changed" = "Publiczny adres IP został zmieniony";
 "Previous IP" = "Poprzedni adres IP: %0";
 "New IP" = "Nowy adres IP: %0";
-"Internet connection lost" = "Utracono połączenie z internetem";
-"Internet connection established" = "Połączenie z internetem zostało przywrócone";
 "Show country code instead of emoji" = "Wyświetl kod kraju zamiast emoji";
 
 // Battery

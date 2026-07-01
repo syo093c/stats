@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Apri Monitoraggio Attività";
-"Report a bug" = "Segnala un bug";
-"Support the application" = "Supporta l'applicazione";
 "Close application" = "Chiudi applicazione";
 "Open application settings" = "Apri le impostazioni dell'applicazione";
 "Open dashboard" = "Apri la dashboard";
 "No notifications available in this module" = "Notifiche non disponibili per questo modulo";
 "Open Calendar" = "Apri Calendario";
 "Toggle the module" = "Commuta il modulo"; // gemma4:31b
-"Open System Stats" = "Apri System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Controlla aggiornamenti";
 "At start" = "All'avvio";
 "Once per day" = "Una volta al giorno";
 "Once per week" = "Una volta a settimana";
 "Once per month" = "Una volta al mese";
 "Never" = "Mai";
-"Check for update" = "Verifica la disponibilità di nuove versioni";
 "Show icon in dock" = "Mostra icona nel dock";
 "Start at login" = "Avvia al login";
 "Build number" = "Numero Build";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Salva la velocità delle ventole";
 "Fan" = "Ventola";
 "HID sensors" = "Sensori HID";
-"Synchronize fan's control" = "Sincronizza ventole";
 "Current" = "Corrente";
 "Energy" = "Energia";
 "Show unknown sensors" = "Mostra sensori sconosciuti";
-"Install fan helper" = "Installa estensione ventole";
-"Uninstall fan helper" = "Disinstalla estensione ventole";
-"Approve in System Settings ▸ Login Items" = "Approva in Regolazioni di Sistema ▸ Elementi login"; // gemma4:31b
-"Fan helper needs your approval" = "L'assistente della ventola richiede la tua approvazione"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Per controllare le ventole, abilita Stats in Regolazioni di Sistema ▸ Elementi login."; // gemma4:31b
-"Open Login Items" = "Apri Elementi login"; // gemma4:31b
-"Could not enable the fan helper" = "Impossibile abilitare l'assistente per la ventola"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Apri Impostazioni di Sistema ▸ Elementi login, assicurati che Stats sia consentito in background, poi riprova."; // gemma4:31b
 "Fan value" = "Valore ventola";
-"Turn off fan" = "Disattiva la ventola";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Stai per disattivare la ventola. Questa azione non è consigliata e può danneggiare il tuo mac, sei sicuro di voler proseguire?";
 "Sensor threshold" = "Soglia sensore";
 "Left fan" = "Ventola sinistra";
 "Right fan" = "Ventola destra";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Caricamento"; // translategemma:4b
 "Downloading" = "Scarica"; // translategemma:4b
-"Public IP" = "IP Pubblico";
 "Local IP" = "IP Locale";
 "Interface" = "Interfaccia";
 "Physical address" = "Indirizzo fisico";
@@ -386,24 +368,12 @@
 "Channel" = "Canale";
 "Autodetection" = "Rilevamento automatico";
 "Widget activation threshold" = "Soglia di attivamento widget";
-"Internet connection" = "Connessione internet";
-"Connectivity host" = "Host di connettività"; // gemma4:31b
-"Leave empty to disable the check" = "Lascia vuoto per disattivare la verifica";
-"Connectivity history" = "Cronologia connettività";
-"Auto-refresh public IP address" = "Aggiorna automaticamente indirizzo IP pubblico";
-"Every hour" = "Ogni ora";
-"Every 12 hours" = "Ogni 12 ore";
-"Every 24 hours" = "Ogni 24 ore";
 "Last reset" = "Ultimo reset %0 fa";
-"Latency" = "Latenza";
 "Address" = "Indirizzo"; // translategemma:4b
 "WiFi network" = "Rete WiFi"; // translategemma:4b
 "Local IP changed" = "L'IP locale è cambiato"; // gemma4:31b
-"Public IP changed" = "L'IP pubblico è cambiato"; // gemma4:31b
 "Previous IP" = "IP precedente: %0"; // gemma4:31b
 "New IP" = "Nuovo IP: %0"; // gemma4:31b
-"Internet connection lost" = "Connessione Internet persa"; // gemma4:31b
-"Internet connection established" = "Connessione a Internet stabilita"; // translategemma:4b
 "Show country code instead of emoji" = "Mostra il codice paese invece dell'emoji"; // gemma4:31b
 
 // Battery

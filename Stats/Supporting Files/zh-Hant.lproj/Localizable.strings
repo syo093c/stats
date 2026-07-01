@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "打開活動監視器";
-"Report a bug" = "回報錯誤";
-"Support the application" = "贊助此應用程式";
 "Close application" = "關閉應用程式";
 "Open application settings" = "打開應用程式設定";
 "Open dashboard" = "打開儀表板";
 "No notifications available in this module" = "沒有可用於此模組的通知";
 "Open Calendar" = "打開「行事曆」";
 "Toggle the module" = "切換為模組顯示";
-"Open System Stats" = "開啟 System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "檢查更新";
 "At start" = "打開時檢查";
 "Once per day" = "每天1次";
 "Once per week" = "每週1次";
 "Once per month" = "每月1次";
 "Never" = "不檢查更新";
-"Check for update" = "檢查是否有更新";
 "Show icon in dock" = "在Dock上顯示圖示";
 "Start at login" = "登入時打開";
 "Build number" = "組建號碼";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "攝氏 (˚C)";
 "Fahrenheit" = "華氏 (˚F)";
-"Save the fan speed" = "儲存風扇速度";
 "Fan" = "風扇";
 "HID sensors" = "HID感知器";
-"Synchronize fan's control" = "同步風扇控制";
 "Current" = "電流";
 "Energy" = "能耗";
 "Show unknown sensors" = "顯示未知的感知器";
-"Install fan helper" = "安裝風扇輔助程式";
-"Uninstall fan helper" = "解除安裝風扇輔助程式";
-"Approve in System Settings ▸ Login Items" = "在系統設定 ▸ 登入項目中核准"; // gemma4:31b
-"Fan helper needs your approval" = "風扇輔助工具需要您的核准"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "若要控制風扇，請在「系統設定」▸「登入項目」中啟用 Stats。"; // gemma4:31b
-"Open Login Items" = "開啟登入項目"; // gemma4:31b
-"Could not enable the fan helper" = "無法啟用風扇助手"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "開啟「系統設定」▸「登入項目」，確認 Stats 已獲准在背景執行，然後再試一次。"; // gemma4:31b
 "Fan value" = "風扇轉速值";
-"Turn off fan" = "關閉風扇";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "您似乎要關閉您Mac的風扇。不建議進行此操作，因為這可能會造成Mac的損毀，您確定仍要關閉風扇嗎？";
 "Sensor threshold" = "感知器臨界值";
 "Left fan" = "左側風扇";
 "Right fan" = "右側風扇";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "上傳";
 "Downloading" = "下載";
-"Public IP" = "公用IP";
 "Local IP" = "區域IP";
 "Interface" = "介面";
 "Physical address" = "實體位址";
@@ -386,24 +368,12 @@
 "Channel" = "通道";
 "Autodetection" = "自動檢測";
 "Widget activation threshold" = "小工具啟動臨界值";
-"Internet connection" = "網際網路連線裝態";
-"Connectivity host" = "連線能力測試主機（ICMP）";
-"Leave empty to disable the check" = "留空來停用檢查";
-"Connectivity history" = "連線歷程紀錄";
-"Auto-refresh public IP address" = "自動重新整理公用IP位址";
-"Every hour" = "每小時";
-"Every 12 hours" = "每12小時";
-"Every 24 hours" = "每24小時";
 "Last reset" = "上次重置於 %0 前";
-"Latency" = "延遲";
 "Address" = "位址";
 "WiFi network" = "Wi-Fi網路";
 "Local IP changed" = "區域IP已變更";
-"Public IP changed" = "公用IP已變更";
 "Previous IP" = "舊IP：%0";
 "New IP" = "新IP：%0";
-"Internet connection lost" = "網際網路連線已遺失";
-"Internet connection established" = "網際網路連線已建立";
 "Show country code instead of emoji" = "顯示國家代碼而非表情符號"; // gemma4:31b
 
 // Battery

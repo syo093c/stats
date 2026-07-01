@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Ouvrir le Moniteur d'activité";
-"Report a bug" = "Signaler un bug";
-"Support the application" = "Soutenir l'application";
 "Close application" = "Fermer l'application";
 "Open application settings" = "Ouvrir les paramètres de l'application";
 "Open dashboard" = "Ouvrir le tableau de bord";
 "No notifications available in this module" = "Aucune modification disponible pour ce module";
 "Open Calendar" = "Ouvrir le calendrier"; // translategemma:4b
 "Toggle the module" = "Basculer le module"; // gemma4:31b
-"Open System Stats" = "Ouvrir System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Vérifier les mises à jour";
 "At start" = "Au démarrage";
 "Once per day" = "Une fois par jour";
 "Once per week" = "Une fois par semaine";
 "Once per month" = "Une fois par mois";
 "Never" = "Jamais";
-"Check for update" = "Vérifier les mises à jour";
 "Show icon in dock" = "Afficher l'icône dans le Dock";
 "Start at login" = "Démarrer à l'ouverture de la session";
 "Build number" = "Numéro de version";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Enregistrer la vitesse du ventilateur";
 "Fan" = "Ventilateur";
 "HID sensors" = "Capteurs HID";
-"Synchronize fan's control" = "Synchroniser le contrôle des ventilateurs";
 "Current" = "Courant";
 "Energy" = "Énergie";
 "Show unknown sensors" = "Afficher les capteurs inconnus";
-"Install fan helper" = "Installer l'assistant des ventilateurs";
-"Uninstall fan helper" = "Désinstaller l'assistant des ventilateurs";
-"Approve in System Settings ▸ Login Items" = "Autoriser dans Réglages Système ▸ Ouverture"; // gemma4:31b
-"Fan helper needs your approval" = "L'assistant du ventilateur nécessite votre approbation"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Pour contrôler les ventilateurs, activez Stats dans Réglages Système ▸ Ouverture."; // gemma4:31b
-"Open Login Items" = "Ouvrir les éléments d'ouverture"; // gemma4:31b
-"Could not enable the fan helper" = "Impossible d'activer l'assistant du ventilateur"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Ouvrez les Réglages Système ▸ Ouverture de session, assurez-vous que Stats est autorisé en arrière-plan, puis réessayez."; // gemma4:31b
 "Fan value" = "Vitesse du ventilateur";
-"Turn off fan" = "Éteindre les ventilateurs";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Vous vous apprêtez à éteindre les ventilateurs. Cette action n'est pas recommandée car elle peut endommager votre Mac, êtes-vous sûr de vouloir faire cela ?";
 "Sensor threshold" = "Seuil du capteur";
 "Left fan" = "Gauche";
 "Right fan" = "Droite";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Envoi";
 "Downloading" = "Téléchargement";
-"Public IP" = "IP publique";
 "Local IP" = "IP locale";
 "Interface" = "Interface";
 "Physical address" = "Adresse physique";
@@ -386,24 +368,12 @@
 "Channel" = "Canal";
 "Autodetection" = "Détection automatique";
 "Widget activation threshold" = "Seuil d'activation du widget";
-"Internet connection" = "Connexion Internet";
-"Connectivity host" = "Hôte de connectivité";
-"Leave empty to disable the check" = "Laisser vide pour désactiver la vérification";
-"Connectivity history" = "Historique de la connectivité";
-"Auto-refresh public IP address" = "Actualiser automatiquement l'adresse IP publique";
-"Every hour" = "Toutes les heures";
-"Every 12 hours" = "Toutes les 12 heures";
-"Every 24 hours" = "Toutes les 24 heures";
 "Last reset" = "Dernière réinitialisation il y a %0";
-"Latency" = "Latence";
 "Address" = "Adresse"; // translategemma:4b
 "WiFi network" = "Réseau Wi-Fi";
 "Local IP changed" = "Adresse IP locale modifiée";
-"Public IP changed" = "Adresse IP publique modifiée";
 "Previous IP" = "IP précédente : %0"; // gemma4:31b
 "New IP" = "Nouvelle adresse IP : %0"; // translategemma:4b
-"Internet connection lost" = "Connexion Internet perdue";
-"Internet connection established" = "Connexion Internet établie"; // translategemma:4b
 "Show country code instead of emoji" = "Afficher le code du pays à la place des emojis";
 
 // Battery

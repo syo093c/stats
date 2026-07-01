@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Открыть Мониторинг системы";
-"Report a bug" = "Сообщить об ошибке";
-"Support the application" = "Поддержите приложение";
 "Close application" = "Закрыть приложение";
 "Open application settings" = "Открыть настройки приложения";
 "Open dashboard" = "Открыть dashboard";
 "No notifications available in this module" = "В этом модуле нет доступных уведомлений";
 "Open Calendar" = "Открыть календарь";
 "Toggle the module" = "Переключить модуль";
-"Open System Stats" = "Открыть System Stats";
 
 // Application settings
-"Check for updates" = "Проверять обновления";
 "At start" = "При включении";
 "Once per day" = "Раз в день";
 "Once per week" = "Раз в неделю";
 "Once per month" = "Раз в месяц";
 "Never" = "Никогда";
-"Check for update" = "Проверить обновление";
 "Show icon in dock" = "Показать значок в dock";
 "Start at login" = "Запуск при входе";
 "Build number" = "Номер сборки";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Цельсия";
 "Fahrenheit" = "Фаренгейта";
-"Save the fan speed" = "Сохранить скорость вентилятора";
 "Fan" = "Вентилятор";
 "HID sensors" = "HID датчики";
-"Synchronize fan's control" = "Синхронизировать управление вентиляторами";
 "Current" = "Ток";
 "Energy" = "Энергия";
 "Show unknown sensors" = "Показать неизвестные датчики";
-"Install fan helper" = "Установить помощник для вентилятора";
-"Uninstall fan helper" = "Удалить помощник для вентилятора";
-"Approve in System Settings ▸ Login Items" = "Approve in System Settings ▸ Login Items";
-"Fan helper needs your approval" = "Fan helper needs your approval";
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "To control the fans, enable Stats in System Settings ▸ Login Items.";
-"Open Login Items" = "Open Login Items";
-"Could not enable the fan helper" = "Could not enable the fan helper";
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again.";
 "Fan value" = "Значение вентилятора";
-"Turn off fan" = "Выключить вентилятор";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Вы собираетесь выключить вентилятор. Это не рекомендуемое действие, которое может сломать ваш Mac. Вы уверены, что хотите это сделать?";
 "Sensor threshold" = "Порог датчика";
 "Left fan" = "Левый";
 "Right fan" = "Правый";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Выгрузка";
 "Downloading" = "Загрузка";
-"Public IP" = "Публичный IP";
 "Local IP" = "Локальный IP";
 "Interface" = "Интерфейс";
 "Physical address" = "Физический адрес";
@@ -386,24 +368,12 @@
 "Channel" = "Канал";
 "Autodetection" = "Автоопределение";
 "Widget activation threshold" = "Порог активации виджета";
-"Internet connection" = "Интернет-соединение";
-"Connectivity host" = "Хост подключения";
-"Leave empty to disable the check" = "Оставьте пустым, чтобы отключить проверку";
-"Connectivity history" = "История подключения";
-"Auto-refresh public IP address" = "Автоматическое обновление IP-адреса";
-"Every hour" = "Каждый час";
-"Every 12 hours" = "Каждые 12 часов";
-"Every 24 hours" = "Каждые 24 часа";
 "Last reset" = "Последний сброс %0 назад";
-"Latency" = "Задержка";
 "Address" = "Адрес";
 "WiFi network" = "Сеть Wi-Fi";
 "Local IP changed" = "Локальный IP-адрес был изменён";
-"Public IP changed" = "Публичный IP-адрес был изменён";
 "Previous IP" = "Предыдущий IP-адрес: %0";
 "New IP" = "Новый IP-адрес: %0";
-"Internet connection lost" = "Соединение с интернетом потеряно";
-"Internet connection established" = "Соединение с интернетом восстановлено";
 "Show country code instead of emoji" = "Отображать код страны вместо эмодзи";
 
 // Battery

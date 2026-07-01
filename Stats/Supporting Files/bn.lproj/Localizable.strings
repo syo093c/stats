@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Activity Monitor খুলুন";
-"Report a bug" = "বাগ রিপোর্ট করুন";
-"Support the application" = "অ্যাপটিকে সমর্থন করুন";
 "Close application" = "অ্যাপ বন্ধ করুন";
 "Open application settings" = "অ্যাপ সেটিংস খুলুন";
 "Open dashboard" = "ড্যাশবোর্ড খুলুন";
 "No notifications available in this module" = "এই মডিউলে কোনো বিজ্ঞপ্তি নেই";
 "Open Calendar" = "ক্যালেন্ডার খুলুন";
 "Toggle the module" = "মডিউল চালু/বন্ধ করুন";
-"Open System Stats" = "System Stats খুলুন";
 
 // Application settings
-"Check for updates" = "আপডেট পরীক্ষা করুন";
 "At start" = "শুরুতে";
 "Once per day" = "প্রতিদিন একবার";
 "Once per week" = "প্রতি সপ্তাহে একবার";
 "Once per month" = "প্রতি মাসে একবার";
 "Never" = "কখনো না";
-"Check for update" = "আপডেট পরীক্ষা করুন";
 "Show icon in dock" = "ডকে আইকন দেখান";
 "Start at login" = "লগইনে শুরু করুন";
 "Build number" = "বিল্ড নম্বর";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "সেলসিয়াস";
 "Fahrenheit" = "ফারেনহাইট";
-"Save the fan speed" = "ফ্যানের গতি সংরক্ষণ করুন";
 "Fan" = "ফ্যান";
 "HID sensors" = "HID সেন্সর";
-"Synchronize fan's control" = "ফ্যানের নিয়ন্ত্রণ সিঙ্ক্রোনাইজ করুন";
 "Current" = "কারেন্ট";
 "Energy" = "শক্তি";
 "Show unknown sensors" = "অজানা সেন্সর দেখান";
-"Install fan helper" = "ফ্যান হেল্পার ইনস্টল করুন";
-"Uninstall fan helper" = "ফ্যান হেল্পার আনইনস্টল করুন";
-"Approve in System Settings ▸ Login Items" = "সিস্টেম সেটিংস-এ অনুমোদন করুন ▸ লগইন আইটেম"; // gemma4:31b
-"Fan helper needs your approval" = "ফ্যান হেল্পারের আপনার অনুমোদনের প্রয়োজন"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "ফ্যানগুলো নিয়ন্ত্রণ করতে, সিস্টেম সেটিংস ▸ লগইন আইটেমস-এ Stats সক্ষম করুন।"; // gemma4:31b
-"Open Login Items" = "লগইন আইটেম খুলুন"; // gemma4:31b
-"Could not enable the fan helper" = "ফ্যান হেল্পারটি সক্ষম করা যায়নি"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "সিস্টেম সেটিংস ▸ লগইন আইটেমস খুলুন, নিশ্চিত করুন যে Stats ব্যাকগ্রাউন্ডে অনুমোদিত, তারপর আবার চেষ্টা করুন।"; // gemma4:31b
 "Fan value" = "ফ্যানের মান";
-"Turn off fan" = "ফ্যান বন্ধ করুন";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "আপনি ফ্যান বন্ধ করতে যাচ্ছেন। এটি সুপারিশকৃত নয় এবং এতে আপনার Mac-এর ক্ষতি হতে পারে। আপনি কি নিশ্চিত?";
 "Sensor threshold" = "সেন্সরের সীমা";
 "Left fan" = "বাম";
 "Right fan" = "ডান";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "আপলোড";
 "Downloading" = "ডাউনলোড";
-"Public IP" = "পাবলিক IP";
 "Local IP" = "স্থানীয় IP";
 "Interface" = "ইন্টারফেস";
 "Physical address" = "ভৌত ঠিকানা";
@@ -386,24 +368,12 @@
 "Channel" = "চ্যানেল";
 "Autodetection" = "স্বয়ংক্রিয় শনাক্তকরণ";
 "Widget activation threshold" = "উইজেট সক্রিয়করণ সীমা";
-"Internet connection" = "ইন্টারনেট সংযোগ";
-"Connectivity host" = "সংযোগ হোস্ট";
-"Leave empty to disable the check" = "পরীক্ষা নিষ্ক্রিয় করতে খালি রাখুন";
-"Connectivity history" = "সংযোগ ইতিহাস";
-"Auto-refresh public IP address" = "পাবলিক IP ঠিকানা স্বয়ংক্রিয়ভাবে রিফ্রেশ করুন";
-"Every hour" = "প্রতি ঘণ্টায়";
-"Every 12 hours" = "প্রতি 12 ঘণ্টায়";
-"Every 24 hours" = "প্রতি 24 ঘণ্টায়";
 "Last reset" = "শেষ রিসেট %0 আগে";
-"Latency" = "লেটেন্সি";
 "Address" = "ঠিকানা";
 "WiFi network" = "WiFi নেটওয়ার্ক";
 "Local IP changed" = "স্থানীয় IP পরিবর্তিত হয়েছে";
-"Public IP changed" = "পাবলিক IP পরিবর্তিত হয়েছে";
 "Previous IP" = "পূর্ববর্তী IP: %0";
 "New IP" = "নতুন IP: %0";
-"Internet connection lost" = "ইন্টারনেট সংযোগ বিচ্ছিন্ন হয়েছে";
-"Internet connection established" = "ইন্টারনেট সংযোগ স্থাপিত হয়েছে";
 "Show country code instead of emoji" = "ইমোজির পরিবর্তে দেশের কোড দেখান";
 
 // Battery

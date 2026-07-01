@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Odpri monitor dejavnosti";
-"Report a bug" = "Prijavi napako";
-"Support the application" = "Donacija za aplikacijo";
 "Close application" = "Zapri aplikacijo";
 "Open application settings" = "Odpri nastavitve aplikacije";
 "Open dashboard" = "Odpri nadzorno ploščo";
 "No notifications available in this module" = "V tem modulu niso na voljo nobena obvestila";
 "Open Calendar" = "Odpri koledar";
 "Toggle the module" = "Preklopite modul"; // gemma4:31b
-"Open System Stats" = "Odpri System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Preveri za posodobitve";
 "At start" = "Ob zagonu";
 "Once per day" = "Enkrat na dan";
 "Once per week" = "Enkrat na teden";
 "Once per month" = "Enkrat na mesec";
 "Never" = "Nikoli";
-"Check for update" = "Preveri za posodobitev";
 "Show icon in dock" = "Prikaži ikono v opravilni vrstici";
 "Start at login" = "Zaženi ob prijavi";
 "Build number" = "Številka gradnje";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celzija";
 "Fahrenheit" = "Farenhajt"; // translategemma:4b
-"Save the fan speed" = "Shrani hitrost ventilatorja";
 "Fan" = "Ventilator";
 "HID sensors" = "HID senzorji";
-"Synchronize fan's control" = "Sinhroniziraj krmiljenje ventilatorja";
 "Current" = "Tok";
 "Energy" = "Energija";
 "Show unknown sensors" = "Prikaži neznane senzorje";
-"Install fan helper" = "Namesti pomočnika za ventilatorje";
-"Uninstall fan helper" = "Odstrani pomočnika za ventilatorje";
-"Approve in System Settings ▸ Login Items" = "Odobrite v Sistemskih nastavitvah ▸ Predmeti ob prijavi"; // gemma4:31b
-"Fan helper needs your approval" = "Pomočnik za ventilator potrebuje vašo odobritev"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Za upravljanje ventilatorjev omogočite Stats v Sistemskih nastavitvah ▸ Predmeti ob prijavi."; // gemma4:31b
-"Open Login Items" = "Odpri elemente ob prijavi"; // gemma4:31b
-"Could not enable the fan helper" = "Ni bilo mogoče omogočiti pomočnika za ventilator"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Odprite Sistemske nastavitve ▸ Elementi prijave, prepričajte se, da je Stats dovoljen v ozadju, nato ponovite poskus."; // gemma4:31b
 "Fan value" = "Vrednost ventilatorja";
-"Turn off fan" = "Izklopi ventilator";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Izklopili boste ventilator. To ni priporočljivo dejanje, saj lahko poškoduje vaš računalnik. Ali ste prepričani, da želite to storiti?";
 "Sensor threshold" = "Prag zaznavanja";
 "Left fan" = "Levi ventilator";
 "Right fan" = "Desni ventilator";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Oddajanje";
 "Downloading" = "Prenašanje";
-"Public IP" = "Javni IP";
 "Local IP" = "Lokalni IP";
 "Interface" = "Vmesnik";
 "Physical address" = "Fizični naslov";
@@ -386,24 +368,12 @@
 "Channel" = "Kanal";
 "Autodetection" = "Samodejna zaznava";
 "Widget activation threshold" = "Prag aktiviranja pripomočka";
-"Internet connection" = "Internetna povezava";
-"Connectivity host" = "Gostitelj za preverjanje povezljivosti";
-"Leave empty to disable the check" = "Pusti prazno, če želiš onemogočiti preverjanje povezljivosti";
-"Connectivity history" = "Zgodovina povezljivosti";
-"Auto-refresh public IP address" = "Samodejna osvežitev javnega IP naslova";
-"Every hour" = "Vsako uro";
-"Every 12 hours" = "Vsakih 12 ur";
-"Every 24 hours" = "Vsakih 24 ur";
 "Last reset" = "Zadnja ponastavitev pred %0";
-"Latency" = "Zakasnitev";
 "Address" = "Naslov";
 "WiFi network" = "Omrežje WiFi"; // gemma4:31b
 "Local IP changed" = "Lokalni IP se je spremenil"; // gemma4:31b
-"Public IP changed" = "Javni IP se je spremenil"; // gemma4:31b
 "Previous IP" = "Prejšnji IP: %0"; // translategemma:4b
 "New IP" = "Nov IP-naslov: %0"; // gemma4:31b
-"Internet connection lost" = "Povezava z internetom prekinjena"; // gemma4:31b
-"Internet connection established" = "Povezava z internetom vzpostavljena"; // gemma4:31b
 "Show country code instead of emoji" = "Prikaži kodo države namesto emojija"; // gemma4:31b
 
 // Battery

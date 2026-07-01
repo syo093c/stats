@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Avaa Aktiviteettimonitori";
-"Report a bug" = "Ilmoita virheestä";
-"Support the application" = "Tue sovellusta";
 "Close application" = "Sulje sovellus";
 "Open application settings" = "Avaa sovelluksen asetukset";
 "Open dashboard" = "Avaa kojelauta";
 "No notifications available in this module" = "Ei ilmoituksia tässä moduulissa";
 "Open Calendar" = "Avaa kalenteri"; // translategemma:4b
 "Toggle the module" = "Kytke moduuli"; // gemma4:31b
-"Open System Stats" = "Avaa System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Tarkista päivitykset";
 "At start" = "Käynnistyksessä";
 "Once per day" = "Kerran päivässä";
 "Once per week" = "Kerran viikossa";
 "Once per month" = "Kerran kuukaudessa";
 "Never" = "Ei koskaan";
-"Check for update" = "Tarkista päivitys";
 "Show icon in dock" = "Näytä kuvake telakassa";
 "Start at login" = "Käynnistä kirjautumisen yhteydessä";
 "Build number" = "Kokoonpanon numero";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Tallenna tuulettimen nopeus";
 "Fan" = "Tuuletin";
 "HID sensors" = "HID-anturit";
-"Synchronize fan's control" = "Synkronoi tuulettimen hallinta";
 "Current" = "Virta";
 "Energy" = "Energia";
 "Show unknown sensors" = "Näytä tuntemattomat anturit";
-"Install fan helper" = "Asenna tuuletinavustaja";
-"Uninstall fan helper" = "Poista tuuletinavustaja";
-"Approve in System Settings ▸ Login Items" = "Hyväksy Järjestelmäasetuksissa ▸ Kirjautumiskohteet"; // gemma4:31b
-"Fan helper needs your approval" = "Tuuletinapuohjelma tarvitsee hyväksyntäsi"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Hallitaksesi tuulettimia, ota Stats käyttöön kohdassa Järjestelmäasetukset ▸ Kirjautumiskohteet."; // gemma4:31b
-"Open Login Items" = "Avaa kirjautumiskohteet"; // gemma4:31b
-"Could not enable the fan helper" = "Tuulettimen apuohjelmaa ei voitu ottaa käyttöön"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Avaa Järjestelmäasetukset ▸ Kirjautumiskohteet, varmista, että Stats on sallittu taustalla, ja yritä sitten uudelleen."; // gemma4:31b
 "Fan value" = "Tuulettimen arvo";
-"Turn off fan" = "Sammuta tuuletin";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Olet sammuttamassa tuuletinta. Tämä ei ole suositeltavaa ja voi vahingoittaa Maciasi. Haluatko varmasti tehdä tämän?";
 "Sensor threshold" = "Anturin raja";
 "Left fan" = "Vasen tuuletin";
 "Right fan" = "Oikea tuuletin";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Lähetys";
 "Downloading" = "Lataus";
-"Public IP" = "Julkinen IP";
 "Local IP" = "Paikallinen IP";
 "Interface" = "Liitäntä";
 "Physical address" = "Fyysinen osoite";
@@ -386,24 +368,12 @@
 "Channel" = "Kanava";
 "Autodetection" = "Automaattinen tunnistus";
 "Widget activation threshold" = "Widgetin aktivoinnin raja";
-"Internet connection" = "Internet-yhteys";
-"Connectivity host" = "Yhteyden isäntä";
-"Leave empty to disable the check" = "Jätä tyhjäksi poistaaksesi tarkistuksen käytöstä";
-"Connectivity history" = "Yhteyshistoria";
-"Auto-refresh public IP address" = "Päivitä julkinen IP-osoite automaattisesti";
-"Every hour" = "Joka tunti";
-"Every 12 hours" = "Joka 12. tunti";
-"Every 24 hours" = "Joka 24. tunti";
 "Last reset" = "Viimeksi nollattu %0 sitten";
-"Latency" = "Viive";
 "Address" = "Osoite"; // translategemma:4b
 "WiFi network" = "WiFi-verkko"; // gemma4:31b
 "Local IP changed" = "Paikallinen IP-osoite on muuttunut"; // translategemma:4b
-"Public IP changed" = "Julkinen IP-osoite on muuttunut"; // translategemma:4b
 "Previous IP" = "Edellinen IP-osoite: %0"; // translategemma:4b
 "New IP" = "Uusi IP: %0"; // gemma4:31b
-"Internet connection lost" = "Internet-yhteys katkesi"; // gemma4:31b
-"Internet connection established" = "Internet-yhteys muodostettu"; // translategemma:4b
 "Show country code instead of emoji" = "Näytä maakoodi emojin sijaan"; // gemma4:31b
 
 // Battery

@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "打开活动监视器";
-"Report a bug" = "报告漏洞";
-"Support the application" = "支持本应用";
 "Close application" = "关闭应用";
 "Open application settings" = "打开应用设置";
 "Open dashboard" = "打开仪表盘";
 "No notifications available in this module" = "该模块不支持通知";
 "Open Calendar" = "打开日历";
 "Toggle the module" = "切换模块显示";
-"Open System Stats" = "打开 System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "检查更新";
 "At start" = "启动时";
 "Once per day" = "每日一次";
 "Once per week" = "每周一次";
 "Once per month" = "每月一次";
 "Never" = "从不";
-"Check for update" = "检查更新";
 "Show icon in dock" = "在程序坞显示图标";
 "Start at login" = "登录时打开";
 "Build number" = "版本号";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "摄氏度";
 "Fahrenheit" = "华氏度";
-"Save the fan speed" = "保存风扇转速";
 "Fan" = "风扇";
 "HID sensors" = "HID 传感器";
-"Synchronize fan's control" = "同步控制风扇";
 "Current" = "电流";
 "Energy" = "能耗";
 "Show unknown sensors" = "显示未知传感器";
-"Install fan helper" = "安装风扇控制程序";
-"Uninstall fan helper" = "卸载风扇控制程序";
-"Approve in System Settings ▸ Login Items" = "在系统设置 ▸ 登录项中批准"; // gemma4:31b
-"Fan helper needs your approval" = "风扇辅助工具需要您的批准"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "若要控制风扇，请在“系统设置”▸“登录项”中启用 Stats。"; // gemma4:31b
-"Open Login Items" = "打开登录项"; // gemma4:31b
-"Could not enable the fan helper" = "无法启用风扇助手"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "打开“系统设置” ▸ “登录项”，确保 Stats 已允许在后台运行，然后重试。"; // gemma4:31b
 "Fan value" = "风扇转数";
-"Turn off fan" = "禁用风扇";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "你想禁用你的风扇，这可能损害你的Mac。不推荐进行这个操作，你确定要继续吗？";
 "Sensor threshold" = "传感器阈值";
 "Left fan" = "左侧风扇";
 "Right fan" = "右侧风扇";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "上传";
 "Downloading" = "下载";
-"Public IP" = "公网IP";
 "Local IP" = "本地IP";
 "Interface" = "接口";
 "Physical address" = "物理地址";
@@ -386,24 +368,12 @@
 "Channel" = "频道";
 "Autodetection" = "自动检测";
 "Widget activation threshold" = "小组件激活阈值";
-"Internet connection" = "网络连接状态";
-"Connectivity host" = "连接 Host";
-"Leave empty to disable the check" = "不在该选项内输入以禁用检查";
-"Connectivity history" = "连接历史";
-"Auto-refresh public IP address" = "自动刷新公网IP地址";
-"Every hour" = "每小时";
-"Every 12 hours" = "每12小时";
-"Every 24 hours" = "每24小时";
 "Last reset" = "上次重置于 %0 之前";
-"Latency" = "延迟";
 "Address" = "地址";
 "WiFi network" = "WiFi网络";
 "Local IP changed" = "本地IP已变更";
-"Public IP changed" = "公网IP已变更";
 "Previous IP" = "原IP：%0";
 "New IP" = "新IP：%0";
-"Internet connection lost" = "互联网连接丢失";
-"Internet connection established" = "互联网连接已建立";
 "Show country code instead of emoji" = "显示国家代码而不是 emoji"; // gemma4:31b
 
 // Battery

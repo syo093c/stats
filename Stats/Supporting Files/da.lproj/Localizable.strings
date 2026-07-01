@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Åben Aktivitetsmonitor";
-"Report a bug" = "Rapportér en fejl";
-"Support the application" = "Støt programmets udvikling";
 "Close application" = "Luk programmet";
 "Open application settings" = "Åben applikationsindstillinger";
 "Open dashboard" = "Åben instrumentbræt";
 "No notifications available in this module" = "Ingen notifikationer tilgængelige i dette modul"; // gemma4:31b
 "Open Calendar" = "Åbn kalender"; // translategemma:4b
 "Toggle the module" = "Skift modulet"; // gemma4:31b
-"Open System Stats" = "Åbn System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Søg efter opdateringer";
 "At start" = "Ved opstart";
 "Once per day" = "Én gang om dagen";
 "Once per week" = "Én gang om ugen";
 "Once per month" = "Én gang om måneden";
 "Never" = "Aldrig";
-"Check for update" = "Søg efter opdatering";
 "Show icon in dock" = "Vis ikon i Dock";
 "Start at login" = "Start ved login";
 "Build number" = "Build-nummer"; // gemma4:31b
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Gem blæserhastigheden"; // gemma4:31b
 "Fan" = "Blæser"; // gemma4:31b
 "HID sensors" = "HID-sensorer"; // gemma4:31b
-"Synchronize fan's control" = "Synkroniser blæserstyring"; // gemma4:31b
 "Current" = "Strøm"; // gemma4:31b
 "Energy" = "Energi"; // gemma4:31b
 "Show unknown sensors" = "Vis ukendte sensorer"; // gemma4:31b
-"Install fan helper" = "Installer blæserhjælper"; // gemma4:31b
-"Uninstall fan helper" = "Afinstaller hjælpeprogram til blæser"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "Godkend i Systemindstillinger ▸ Login-elementer"; // gemma4:31b
-"Fan helper needs your approval" = "Blæser-hjælpeprogrammet har brug for din godkendelse"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "For at styre blæserne, aktiver Stats i Systemindstillinger ▸ Login-elementer."; // gemma4:31b
-"Open Login Items" = "Åbn login-elementer"; // gemma4:31b
-"Could not enable the fan helper" = "Kunne ikke aktivere blæserhjælperen"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Åbn Systemindstillinger ▸ Login-elementer, sørg for, at Stats er tilladt i baggrunden, og prøv derefter igen."; // gemma4:31b
 "Fan value" = "Blæserværdi"; // gemma4:31b
-"Turn off fan" = "Sluk for ventilator"; // gemma4:31b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Du er ved at slukke for blæseren. Dette er ikke en anbefalet handling, som kan beskadige din Mac, er du sikker på, at du vil gøre det?"; // gemma4:31b
 "Sensor threshold" = "Sensortærskelværdi"; // gemma4:31b
 "Left fan" = "Venstre"; // gemma4:31b
 "Right fan" = "Højre"; // gemma4:31b
@@ -368,7 +351,6 @@
 "Uploading" = "Upload";
 "Uploading" = "Upload";
 "Downloading" = "Download";
-"Public IP" = "Offentlig IP"; // gemma4:31b
 "Local IP" = "Lokal IP"; // gemma4:31b
 "Interface" = "Grænseflade"; // gemma4:31b
 "Physical address" = "Fysisk adresse"; // gemma4:31b
@@ -386,27 +368,14 @@
 "Channel" = "Kanal"; // gemma4:31b
 "Autodetection" = "Autodetektering"; // gemma4:31b
 "Widget activation threshold" = "Tærskel for widget-aktivering"; // gemma4:31b
-"Internet connection" = "Internetforbindelse"; // gemma4:31b
-"Connectivity host" = "Forbindelseshost"; // gemma4:31b
-"Leave empty to disable the check" = "Efterlad tomt for at deaktivere kontrollen"; // gemma4:31b
-"Connectivity history" = "Forbindelseshistorik"; // gemma4:31b
-"Auto-refresh public IP address" = "Automatisk opdatering af offentlig IP-adresse"; // gemma4:31b
-"Every hour" = "Hver time"; // gemma4:31b
-"Every 12 hours" = "Hver 12. time"; // gemma4:31b
-"Every 24 hours" = "Hver 24. time"; // gemma4:31b
 "Last reset" = "Sidste nulstilling for %0 siden"; // gemma4:31b
-"Latency" = "Forsinkelse"; // gemma4:31b
 "Address" = "Adresse"; // gemma4:31b
 "WiFi network" = "WiFi-netværk"; // gemma4:31b
 "Local IP changed" = "Lokal IP er ændret"; // gemma4:31b
-"Public IP changed" = "Offentlig IP er ændret"; // gemma4:31b
 "Previous IP" = "Forrige IP: %0"; // gemma4:31b
 "New IP" = "Ny IP: %0"; // gemma4:31b
-"Internet connection lost" = "Internetforbindelse mistet"; // gemma4:31b
-"Internet connection established" = "Internetforbindelse etableret"; // gemma4:31b
 "Show country code instead of emoji" = "Vis landekode i stedet for emoji"; // gemma4:31b
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Gem blæserhastighed";
 "Source" = "Kilde"; // gemma4:31b
 "AC Power" = "AC-strøm"; // gemma4:31b
 "Battery Power" = "Batteristrøm"; // gemma4:31b
@@ -445,7 +414,6 @@
 "Fan" = "Blæser";
 "HID sensors" = "HID sensorer";
 "No Bluetooth devices are available" = "Ingen Bluetooth-enheder er tilgængelige"; // gemma4:31b
-"Synchronize fan's control" = "Synkroniser blæserkontrol";
 "Current" = "Strøm";
 "Time zone" = "Tidszone"; // gemma4:31b
 "Local" = "Lokal"; // gemma4:31b
@@ -491,11 +459,7 @@
 "Pink" = "Lyserød"; // gemma4:31b
 "Teal" = "Blågrøn"; // gemma4:31b
 "Indigo" = "Indigo";
-"Install fan helper" = "Tillad blæserkontrol";
-"Uninstall fan helper" = "Afinstaller blæserkontrol";
 "Fan value" = "Blæserværdi";
-"Turn off fan" = "Slå blæseren fra"; // translategemma:4b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Du er ved at slukke for blæseren. Dette er ikke en anbefalet handling, da det kan skade din Mac. Er du sikker på du vil fortsætte?";
 "Sensor threshold" = "Sensorgrænse"; // translategemma:4b
 "Left fan" = "Venstre"; // translategemma:4b
 "Right fan" = "Korrekt"; // translategemma:4b
@@ -505,7 +469,6 @@
 // Network
 "Uploading" = "Upload";
 "Downloading" = "Download";
-"Public IP" = "Offentlig IP";
 "Local IP" = "Lokal IP";
 "Interface" = "Grænseflade"; // translategemma:4b
 "Physical address" = "Fysisk adresse";
@@ -523,24 +486,12 @@
 "Channel" = "Kanal";
 "Autodetection" = "Automatisk";
 "Widget activation threshold" = "Grænseværdi for aktivering af widget";
-"Internet connection" = "Internetforbindelse";
-"Connectivity host" = "Host for forbindelse"; // translategemma:4b
-"Leave empty to disable the check" = "Lad feltet være tom for at deaktivere tjekket";
-"Connectivity history" = "Forbindelseshistorik";
-"Auto-refresh public IP address" = "Automatisk opdatering af offentlig IP adresse";
-"Every hour" = "Hver time";
-"Every 12 hours" = "Hver 12 timer";
-"Every 24 hours" = "Hver 24 timer";
 "Last reset" = "Sidste nulstilling %0 siden";
-"Latency" = "Forsinkelse"; // translategemma:4b
 "Address" = "Adresse"; // translategemma:4b
 "WiFi network" = "WiFi-netværk"; // translategemma:4b
 "Local IP changed" = "Det lokale IP-adresse har ændret sig"; // translategemma:4b
-"Public IP changed" = "Den offentlige IP-adresse er ændret"; // translategemma:4b
 "Previous IP" = "Tidligere IP-adresse: %0"; // translategemma:4b
 "New IP" = "Ny IP-adresse: %0"; // translategemma:4b
-"Internet connection lost" = "Internetforbindelsen er mistet"; // translategemma:4b
-"Internet connection established" = "Internetforbindelse etableret"; // translategemma:4b
 "Show country code instead of emoji" = "Vis landekoden i stedet for emoji"; // translategemma:4b
 
 // Battery

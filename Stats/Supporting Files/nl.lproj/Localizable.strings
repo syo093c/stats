@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Open Activiteitenweergave";
-"Report a bug" = "Meld een bug";
-"Support the application" = "Ondersteun de applicatie";
 "Close application" = "Applicatie sluiten";
 "Open application settings" = "Open de applicatie-instellingen";
 "Open dashboard" = "Dashboard openen"; // translategemma:4b
 "No notifications available in this module" = "Geen meldingen beschikbaar in deze module";
 "Open Calendar" = "Open kalender";
 "Toggle the module" = "Activeer/deactiveer de module";
-"Open System Stats" = "Open System Stats";
 
 // Application settings
-"Check for updates" = "Controleer op updates";
 "At start" = "Bij het opstarten";
 "Once per day" = "Eenmaal per dag";
 "Once per week" = "Eenmaal per week";
 "Once per month" = "Eenmaal per maand";
 "Never" = "Nooit";
-"Check for update" = "Controleer op updates";
 "Show icon in dock" = "Pictogram in dock weergeven";
 "Start at login" = "Starten bij inloggen";
 "Build number" = "Buildnummer"; // gemma4:31b
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Sla de ventilatorsnelheid op"; // gemma4:31b
 "Fan" = "Ventilator"; // gemma4:31b
 "HID sensors" = "HID-sensoren"; // gemma4:31b
-"Synchronize fan's control" = "Synchroniseer ventilatorbesturing"; // gemma4:31b
 "Current" = "Stroom"; // gemma4:31b
 "Energy" = "Energie"; // gemma4:31b
 "Show unknown sensors" = "Toon onbekende sensoren"; // gemma4:31b
-"Install fan helper" = "Installeer ventilator-helper"; // gemma4:31b
-"Uninstall fan helper" = "Verwijder ventilator-helper"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "Goedkeuren in Systeeminstellingen ▸ Inlogitems"; // gemma4:31b
-"Fan helper needs your approval" = "Fan-helper heeft uw goedkeuring nodig"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Om de ventilatoren te bedienen, schakel Stats in in Systeeminstellingen ▸ Inlogitems."; // gemma4:31b
-"Open Login Items" = "Open Inlogitems"; // gemma4:31b
-"Could not enable the fan helper" = "Kon de fan-helper niet inschakelen"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Open Systeeminstellingen ▸ Inlogitems, zorg ervoor dat Stats is toegestaan op de achtergrond, en probeer het dan opnieuw."; // gemma4:31b
 "Fan value" = "Ventilatorwaarde"; // gemma4:31b
-"Turn off fan" = "Ventilator uitschakelen"; // gemma4:31b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Je gaat de ventilator uitschakelen. Dit is geen aanbevolen actie die je Mac kan beschadigen, weet je zeker dat je dit wilt doen?"; // gemma4:31b
 "Sensor threshold" = "Sensordrempel"; // gemma4:31b
 "Left fan" = "Links"; // gemma4:31b
 "Right fan" = "Rechts"; // gemma4:31b
@@ -368,7 +351,6 @@
 "Uploading" = "Upload";
 "Uploading" = "Upload";
 "Downloading" = "Download";
-"Public IP" = "Openbaar IP"; // gemma4:31b
 "Local IP" = "Lokaal IP"; // gemma4:31b
 "Interface" = "Interface";
 "Physical address" = "Fysiek adres"; // gemma4:31b
@@ -386,27 +368,14 @@
 "Channel" = "Kanaal"; // gemma4:31b
 "Autodetection" = "Autodetectie"; // gemma4:31b
 "Widget activation threshold" = "Activeringsdrempel van de widget"; // gemma4:31b
-"Internet connection" = "Internetverbinding"; // gemma4:31b
-"Connectivity host" = "Connectiviteitshost"; // gemma4:31b
-"Leave empty to disable the check" = "Laat leeg om de controle uit te schakelen"; // gemma4:31b
-"Connectivity history" = "Connectiviteitsgeschiedenis"; // gemma4:31b
-"Auto-refresh public IP address" = "Openbaar IP-adres automatisch vernieuwen"; // gemma4:31b
-"Every hour" = "Elk uur"; // gemma4:31b
-"Every 12 hours" = "Elke 12 uur"; // gemma4:31b
-"Every 24 hours" = "Elke 24 uur"; // gemma4:31b
 "Last reset" = "Laatste reset %0 geleden"; // gemma4:31b
-"Latency" = "Latentie"; // gemma4:31b
 "Address" = "Adres"; // gemma4:31b
 "WiFi network" = "WiFi-netwerk"; // gemma4:31b
 "Local IP changed" = "Lokaal IP is gewijzigd"; // gemma4:31b
-"Public IP changed" = "Openbaar IP-adres is gewijzigd"; // gemma4:31b
 "Previous IP" = "Vorige IP: %0"; // gemma4:31b
 "New IP" = "Nieuw IP-adres: %0"; // gemma4:31b
-"Internet connection lost" = "Internetverbinding verloren"; // gemma4:31b
-"Internet connection established" = "Internetverbinding tot stand gebracht"; // gemma4:31b
 "Show country code instead of emoji" = "Toon landcode in plaats van emoji"; // gemma4:31b
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Ventilatorsnelheid opslaan";
 "Source" = "Bron"; // gemma4:31b
 "AC Power" = "AC-stroom"; // gemma4:31b
 "Battery Power" = "Batterijvermogen"; // gemma4:31b
@@ -445,7 +414,6 @@
 "Fan" = "Ventilator";
 "HID sensors" = "HID-Sensoren";
 "No Bluetooth devices are available" = "Geen Bluetooth-apparaten beschikbaar"; // gemma4:31b
-"Synchronize fan's control" = "Synchroniseer de bediening van de ventilatoren"; // translategemma:4b
 "Current" = "Huidig";
 "Time zone" = "Tijdzone"; // gemma4:31b
 "Local" = "Lokaal"; // gemma4:31b
@@ -491,11 +459,7 @@
 "Pink" = "Roze"; // gemma4:31b
 "Teal" = "Blauwgroen"; // gemma4:31b
 "Indigo" = "Indigo";
-"Install fan helper" = "Installeer het ventilator-hulpprogramma";
-"Uninstall fan helper" = "Verwijder het ventilator-hulpprogramma.";
 "Fan value" = "Waarde van de ventilator"; // translategemma:4b
-"Turn off fan" = "Zet de ventilator uit"; // translategemma:4b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "U gaat de ventilator uitschakelen. Dit is een onaanbevolen actie die uw Mac kan beschadigen. Bent u er zeker van dat u dit wilt doen?"; // translategemma:4b
 "Sensor threshold" = "Grenswaarde sensor"; // translategemma:4b
 "Left fan" = "Linker ventilator";
 "Right fan" = "Rechter ventilator";
@@ -505,7 +469,6 @@
 // Network
 "Uploading" = "Uploaden";
 "Downloading" = "Downloaden";
-"Public IP" = "Openbaar IP-adres";
 "Local IP" = "Lokaal IP-adres";
 "Interface" = "Interface";
 "Physical address" = "Fysiek adres";
@@ -523,24 +486,12 @@
 "Channel" = "Kanaal"; // translategemma:4b
 "Autodetection" = "Automatische detectie"; // translategemma:4b
 "Widget activation threshold" = "Drempelwaarde voor het activeren van een widget"; // translategemma:4b
-"Internet connection" = "Internetverbinding"; // translategemma:4b
-"Connectivity host" = "Host voor verbinding"; // translategemma:4b
-"Leave empty to disable the check" = "Laat dit veld leeg, om de controle uit te schakelen.";
-"Connectivity history" = "Verbindingshistorie";
-"Auto-refresh public IP address" = "Automatisch openbaar IP-adres verversen";
-"Every hour" = "Elk uur";
-"Every 12 hours" = "Elke 12 uur"; // translategemma:4b
-"Every 24 hours" = "Elke 24 uur"; // translategemma:4b
 "Last reset" = "Laatste reset %0 geleden"; // translategemma:4b
-"Latency" = "Vertraging"; // translategemma:4b
 "Address" = "Adres"; // translategemma:4b
 "WiFi network" = "WiFi-netwerk"; // translategemma:4b
 "Local IP changed" = "Het lokale IP-adres is veranderd"; // translategemma:4b
-"Public IP changed" = "Het openbare IP-adres is veranderd";
 "Previous IP" = "Vorige IP-adres: %0"; // translategemma:4b
 "New IP" = "Nieuw IP-adres: %0"; // translategemma:4b
-"Internet connection lost" = "Internetverbinding verbroken";
-"Internet connection established" = "Internetverbinding tot stand gebracht";
 "Show country code instead of emoji" = "Toon landencode in plaats van een emoji";
 
 // Battery

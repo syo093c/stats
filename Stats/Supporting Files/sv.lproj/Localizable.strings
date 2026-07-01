@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Öppna Aktivitetsövervakaren";
-"Report a bug" = "Rapportera en bugg";
-"Support the application" = "Stöd Stats";
 "Close application" = "Stäng applikationen";
 "Open application settings" = "Öppna applikationsinställningar";
 "Open dashboard" = "Öppna instrumentpanelen";
 "No notifications available in this module" = "Inga notifikationer tillgängliga i denna modul";
 "Open Calendar" = "Öppna Kalender";
 "Toggle the module" = "Växla modulen"; // gemma4:31b
-"Open System Stats" = "Öppna System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Sök efter uppdateringar";
 "At start" = "Vid start";
 "Once per day" = "En gång per dag";
 "Once per week" = "En gång per vecka";
 "Once per month" = "En gång per månad";
 "Never" = "Aldrig";
-"Check for update" = "Sök efter uppdatering";
 "Show icon in dock" = "Visa ikon i Dock";
 "Start at login" = "Starta vid inloggning";
 "Build number" = "Byggnummer";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Spara fläkthastighet";
 "Fan" = "Fläkt";
 "HID sensors" = "HID-sensorer";
-"Synchronize fan's control" = "Synkronisera fläktkontroll";
 "Current" = "Ström";
 "Energy" = "Energi";
 "Show unknown sensors" = "Visa okända sensorer";
-"Install fan helper" = "Installera fläkthjälpare";
-"Uninstall fan helper" = "Avinstallera fläkthjälpare";
-"Approve in System Settings ▸ Login Items" = "Godkänn i Systeminställningar ▸ Inloggningsobjekt"; // gemma4:31b
-"Fan helper needs your approval" = "Fläkthjälpprogrammet behöver ditt godkännande"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "För att styra fläktarna, aktivera Stats i Systeminställningar ▸ Inloggningsobjekt."; // gemma4:31b
-"Open Login Items" = "Öppna inloggningsobjekt"; // gemma4:31b
-"Could not enable the fan helper" = "Kunde inte aktivera fläkthjälparen"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Öppna Systeminställningar ▸ Inloggningsobjekt, se till att Stats är tillåtet i bakgrunden, och försök sedan igen."; // gemma4:31b
 "Fan value" = "Fläktvärde";
-"Turn off fan" = "Stäng av fläkt";
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Du håller på att stänga av fläkten. Detta är en inte rekommenderad åtgärd som kan skada din Mac, är du säker på att du vill göra detta?";
 "Sensor threshold" = "Sensortröskel";
 "Left fan" = "Vänster";
 "Right fan" = "Höger";
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Uppladdning";
 "Downloading" = "Nedladdning";
-"Public IP" = "Publik IP";
 "Local IP" = "Lokal IP";
 "Interface" = "Gränssnitt";
 "Physical address" = "Fysisk adress";
@@ -386,24 +368,12 @@
 "Channel" = "Kanal";
 "Autodetection" = "Autodetektering";
 "Widget activation threshold" = "Widgetaktiveringströskel";
-"Internet connection" = "Internetanslutning";
-"Connectivity host" = "Anslutningsvärd";
-"Leave empty to disable the check" = "Lämna tomt för att inaktivera kontrollen";
-"Connectivity history" = "Anslutningshistorik";
-"Auto-refresh public IP address" = "Uppdatera publik IP-adress automatiskt";
-"Every hour" = "Varje timme";
-"Every 12 hours" = "Var 12:e timme";
-"Every 24 hours" = "Var 24:e timme";
 "Last reset" = "Senaste återställning %0 sedan";
-"Latency" = "Fördröjning";
 "Address" = "Adress"; // translategemma:4b
 "WiFi network" = "WiFi-nätverk"; // translategemma:4b
 "Local IP changed" = "Lokal IP har ändrats"; // gemma4:31b
-"Public IP changed" = "Offentlig IP har ändrats"; // gemma4:31b
 "Previous IP" = "Föregående IP: %0"; // gemma4:31b
 "New IP" = "Ny IP-adress: %0"; // translategemma:4b
-"Internet connection lost" = "Internetanslutningen har förlorats"; // gemma4:31b
-"Internet connection established" = "Internetanslutning upprättad"; // gemma4:31b
 "Show country code instead of emoji" = "Visa landskod istället för emoji"; // translategemma:4b
 
 // Battery

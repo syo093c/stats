@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Buka Monitor Aktivitas";
-"Report a bug" = "Laporkan bug";
-"Support the application" = "Dukung aplikasi ini";
 "Close application" = "Tutup aplikasi";
 "Open application settings" = "Buka pengaturan aplikasi";
 "Open dashboard" = "Buka dasbor";
 "No notifications available in this module" = "Tidak ada notifikasi yang tersedia di modul ini"; // gemma4:31b
 "Open Calendar" = "Buka Kalender"; // translategemma:4b
 "Toggle the module" = "Alihkan modul"; // gemma4:31b
-"Open System Stats" = "Buka System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Periksa pembaruan";
 "At start" = "Saat memulai";
 "Once per day" = "Sekali setiap hari";
 "Once per week" = "Sekali setiap minggu";
 "Once per month" = "Sekali setiap bulan";
 "Never" = "Jangan pernah";
-"Check for update" = "Periksa pembaruan";
 "Show icon in dock" = "Tampilkan ikon pada dok";
 "Start at login" = "Mulai saat login";
 "Build number" = "Nomor build"; // gemma4:31b
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsius";
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Simpan kecepatan kipas";
 "Fan" = "Kipas";
 "HID sensors" = "Sensor HID";
-"Synchronize fan's control" = "Sinkronisasi kontrol kipas"; // gemma4:31b
 "Current" = "Arus"; // gemma4:31b
 "Energy" = "Energi"; // translategemma:4b
 "Show unknown sensors" = "Tampilkan sensor tidak dikenal"; // gemma4:31b
-"Install fan helper" = "Instal pembantu kipas"; // gemma4:31b
-"Uninstall fan helper" = "Hapus instalasi pembantu kipas"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "Setujui di Pengaturan Sistem ▸ Item Login"; // gemma4:31b
-"Fan helper needs your approval" = "Alat bantu kipas membutuhkan persetujuan Anda"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Untuk mengontrol kipas, aktifkan Stats di Pengaturan Sistem ▸ Item Login."; // gemma4:31b
-"Open Login Items" = "Buka Item Login"; // gemma4:31b
-"Could not enable the fan helper" = "Tidak dapat mengaktifkan helper kipas"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Buka Pengaturan Sistem ▸ Item Login, pastikan Stats diizinkan di latar belakang, kemudian coba lagi."; // gemma4:31b
 "Fan value" = "Nilai kipas"; // gemma4:31b
-"Turn off fan" = "Matikan kipas"; // translategemma:4b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Anda akan mematikan kipas. Ini adalah tindakan yang tidak direkomendasikan yang dapat merusak Mac Anda, apakah Anda yakin ingin melakukannya?"; // gemma4:31b
 "Sensor threshold" = "Ambang batas sensor"; // gemma4:31b
 "Left fan" = "Kiri"; // translategemma:4b
 "Right fan" = "Kanan"; // gemma4:31b
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Unggah";
 "Downloading" = "Unduh";
-"Public IP" = "IP Publik";
 "Local IP" = "IP Lokal";
 "Interface" = "Antarmuka";
 "Physical address" = "Alamat fisik";
@@ -386,24 +368,12 @@
 "Channel" = "Saluran"; // translategemma:4b
 "Autodetection" = "Deteksi otomatis"; // translategemma:4b
 "Widget activation threshold" = "Ambang batas aktivasi widget"; // gemma4:31b
-"Internet connection" = "Koneksi internet"; // translategemma:4b
-"Connectivity host" = "Host konektivitas"; // gemma4:31b
-"Leave empty to disable the check" = "Biarkan kosong untuk menonaktifkan pemeriksaan"; // gemma4:31b
-"Connectivity history" = "Riwayat konektivitas"; // gemma4:31b
-"Auto-refresh public IP address" = "Perbarui otomatis alamat IP publik"; // translategemma:4b
-"Every hour" = "Setiap jam"; // translategemma:4b
-"Every 12 hours" = "Setiap 12 jam"; // translategemma:4b
-"Every 24 hours" = "Setiap 24 jam"; // translategemma:4b
 "Last reset" = "Reset terakhir %0 yang lalu"; // gemma4:31b
-"Latency" = "Latensi"; // translategemma:4b
 "Address" = "Alamat"; // translategemma:4b
 "WiFi network" = "Jaringan WiFi"; // translategemma:4b
 "Local IP changed" = "IP lokal telah berubah"; // gemma4:31b
-"Public IP changed" = "IP Publik telah berubah"; // gemma4:31b
 "Previous IP" = "IP Sebelumnya: %0"; // gemma4:31b
 "New IP" = "IP Baru: %0"; // gemma4:31b
-"Internet connection lost" = "Koneksi internet terputus"; // translategemma:4b
-"Internet connection established" = "Koneksi internet terhubung"; // gemma4:31b
 "Show country code instead of emoji" = "Tampilkan kode negara alih-alih emoji"; // gemma4:31b
 
 // Battery

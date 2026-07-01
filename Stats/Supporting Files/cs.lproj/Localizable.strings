@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Otevřít Monitor aktivity";
-"Report a bug" = "Nahlásit chybu";
-"Support the application" = "Podpořte aplikaci";
 "Close application" = "Zavřít aplikaci";
 "Open application settings" = "Otevřít nastavení aplikace";
 "Open dashboard" = "Otevřít dashboard";
 "No notifications available in this module" = "V tomto modulu nejsou k dispozici žádná oznámení"; // gemma4:31b
 "Open Calendar" = "Otevřít kalendář"; // translategemma:4b
 "Toggle the module" = "Přepnout modul"; // gemma4:31b
-"Open System Stats" = "Otevřít System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Zkontrolovat aktualizace";
 "At start" = "Při startu";
 "Once per day" = "Jednou denně";
 "Once per week" = "Jednou týdně";
 "Once per month" = "Jednou měsíčně";
 "Never" = "Nikdy";
-"Check for update" = "Zkontrolovat aktualizace";
 "Show icon in dock" = "Zobrazovat ikonu v Docku";
 "Start at login" = "Spustit po přihlášení";
 "Build number" = "Číslo sestavení";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celsia"; // gemma4:31b
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Uložit rychlost ventilátoru";
 "Fan" = "Ventilátor";
 "HID sensors" = "HID senzory";
-"Synchronize fan's control" = "Synchronizace ovládání ventilátoru";
 "Current" = "Proud";
 "Energy" = "Energie";
 "Show unknown sensors" = "Zobrazit neznáme senzory";
-"Install fan helper" = "Nainstalovat pomocnou aplikaci ovládání ventilátorů";
-"Uninstall fan helper" = "Odinstalovat pomocnou aplikaci ventilátorů";
-"Approve in System Settings ▸ Login Items" = "Schválit v Nastavení systému ▸ Položky přihlášení"; // gemma4:31b
-"Fan helper needs your approval" = "Pomocník pro ventilátor potřebuje váš souhlas"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Pro ovládání ventilátorů povolte Stats v Systemovém nastavení ▸ Položky při přihlášení."; // gemma4:31b
-"Open Login Items" = "Otevřít položky přihlášení"; // gemma4:31b
-"Could not enable the fan helper" = "Nepodařilo se aktivovat pomocný nástroj pro ventilátor"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Otevřete Nastavení systému ▸ Přístup při přihlášení, ujistěte se, že je Stats povoleno v pozadí, a poté zkuste znovu."; // gemma4:31b
 "Fan value" = "Hodnota ventilátoru";
-"Turn off fan" = "Vypnout ventilátor"; // gemma4:31b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Chystáte se vypnout ventilátor. Toto není doporučený postup, který může poškodit váš Mac, jste si jistí, že to chcete udělat?"; // gemma4:31b
 "Sensor threshold" = "Práh senzoru"; // gemma4:31b
 "Left fan" = "Levý"; // gemma4:31b
 "Right fan" = "Pravý"; // gemma4:31b
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Nahrávání";
 "Downloading" = "Stahování";
-"Public IP" = "Veřejná IP";
 "Local IP" = "Místní IP";
 "Interface" = "Rozhraní";
 "Physical address" = "Fyzická adresa";
@@ -386,24 +368,12 @@
 "Channel" = "Kanál";
 "Autodetection" = "Automatická detekce";
 "Widget activation threshold" = "Práh aktivace widgetu";
-"Internet connection" = "Připojení k internetu";
-"Connectivity host" = "Hostitel připojení";
-"Leave empty to disable the check" = "Pro vypnutí kontroly ponechte prázdné pole";
-"Connectivity history" = "Historie konektivity"; // gemma4:31b
-"Auto-refresh public IP address" = "Automatické aktualizace veřejné IP adresy"; // gemma4:31b
-"Every hour" = "Každou hodinu"; // translategemma:4b
-"Every 12 hours" = "Každých 12 hodin"; // translategemma:4b
-"Every 24 hours" = "Každých 24 hodin"; // translategemma:4b
 "Last reset" = "Poslední reset před %0"; // gemma4:31b
-"Latency" = "Latence"; // translategemma:4b
 "Address" = "Adresa"; // translategemma:4b
 "WiFi network" = "Síť WiFi"; // gemma4:31b
 "Local IP changed" = "Lokální IP se změnila"; // gemma4:31b
-"Public IP changed" = "Veřejná IP adresa se změnila"; // gemma4:31b
 "Previous IP" = "Předchozí IP: %0"; // translategemma:4b
 "New IP" = "Nová IP adresa: %0"; // translategemma:4b
-"Internet connection lost" = "Ztraceno připojení k internetu"; // gemma4:31b
-"Internet connection established" = "Připojení k internetu navázáno"; // gemma4:31b
 "Show country code instead of emoji" = "Zobrazit kód země místo emoji"; // gemma4:31b
 
 // Battery

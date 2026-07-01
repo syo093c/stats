@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "Deschide Monitorul de Activitate";
-"Report a bug" = "Raportează o eroare";
-"Support the application" = "Susține aplicația";
 "Close application" = "Închide aplicația";
 "Open application settings" = "Deschide setăriile aplicației";
 "Open dashboard" = "Deschide dashboard"; // gemma4:31b
 "No notifications available in this module" = "Nu sunt disponibile notificări în acest modul"; // gemma4:31b
 "Open Calendar" = "Deschide calendarul"; // translategemma:4b
 "Toggle the module" = "Comută modulul"; // gemma4:31b
-"Open System Stats" = "Deschide System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "Verifică pentru actualizări";
 "At start" = "La pornire";
 "Once per day" = "Odată pe zi";
 "Once per week" = "Odată pe săptămână";
 "Once per month" = "Odată pe lună";
 "Never" = "Niciodată";
-"Check for update" = "Verifică pentru actualizare";
 "Show icon in dock" = "Arată icoana in doc";
 "Start at login" = "Pornește la autentificare";
 "Build number" = "Numărul compilării"; // gemma4:31b
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "Celcius"; // translategemma:4b
 "Fahrenheit" = "Fahrenheit";
-"Save the fan speed" = "Salvează viteza ventilatorului"; // gemma4:31b
 "Fan" = "Ventilator"; // gemma4:31b
 "HID sensors" = "Senzori HID"; // gemma4:31b
-"Synchronize fan's control" = "Sincronizează controlul ventilatoarelor"; // gemma4:31b
 "Current" = "Curent"; // gemma4:31b
 "Energy" = "Energie"; // translategemma:4b
 "Show unknown sensors" = "Afișează senzorii necunoscuți"; // gemma4:31b
-"Install fan helper" = "Instalează asistentul pentru ventilator"; // gemma4:31b
-"Uninstall fan helper" = "Dezinstalează asistentul pentru ventilator"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "Aprobă în Setări sistem ▸ Elemente de autentificare"; // gemma4:31b
-"Fan helper needs your approval" = "Ajutorul pentru ventilator necesită aprobarea ta"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "Pentru a controla ventilatoarele, activează Stats în Setări de sistem ▸ Elementele de autentificare."; // gemma4:31b
-"Open Login Items" = "Deschide elementele de autentificare"; // gemma4:31b
-"Could not enable the fan helper" = "Nu s-a putut activa utilitarul pentru ventilator"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "Deschide Setări sistem ▸ Elemente de autentificare, asigură-te că Stats este permis în fundal, apoi încearcă din nou."; // gemma4:31b
 "Fan value" = "Valoarea ventilatorului"; // gemma4:31b
-"Turn off fan" = "Oprește ventilatorul"; // translategemma:4b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "Sunteți pe cale să opriți ventilatorul. Aceasta nu este o acțiune recomandată care poate deteriora Mac-ul dumneavoastră, sunteți sigur că doriți să faceți acest lucru?"; // gemma4:31b
 "Sensor threshold" = "Pragul senzorului"; // gemma4:31b
 "Left fan" = "Stânga"; // translategemma:4b
 "Right fan" = "Dreapta"; // gemma4:31b
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "Incarcă";
 "Downloading" = "Descarcă";
-"Public IP" = "Adresa de IP publică";
 "Local IP" = "Adresa de IP locală";
 "Interface" = "Interfață";
 "Physical address" = "Adresa fizică";
@@ -386,24 +368,12 @@
 "Channel" = "Canal"; // translategemma:4b
 "Autodetection" = "Autodetectare"; // gemma4:31b
 "Widget activation threshold" = "Prag de activare widget"; // gemma4:31b
-"Internet connection" = "Conexiune la internet"; // translategemma:4b
-"Connectivity host" = "Host de conectivitate"; // gemma4:31b
-"Leave empty to disable the check" = "Lăsați gol pentru a dezactiva verificarea"; // gemma4:31b
-"Connectivity history" = "Istoricul conectivității"; // gemma4:31b
-"Auto-refresh public IP address" = "Actualizare automată a adresei IP publice"; // translategemma:4b
-"Every hour" = "La fiecare oră"; // translategemma:4b
-"Every 12 hours" = "La fiecare 12 ore"; // translategemma:4b
-"Every 24 hours" = "La fiecare 24 de ore"; // translategemma:4b
 "Last reset" = "Ultima resetare acum %0"; // gemma4:31b
-"Latency" = "Latență"; // translategemma:4b
 "Address" = "Adresă"; // translategemma:4b
 "WiFi network" = "Rețea WiFi"; // gemma4:31b
 "Local IP changed" = "IP-ul local s-a modificat"; // gemma4:31b
-"Public IP changed" = "Adresa IP publică s-a modificat"; // gemma4:31b
 "Previous IP" = "IP anterior: %0"; // gemma4:31b
 "New IP" = "Noua adresă IP: %0"; // gemma4:31b
-"Internet connection lost" = "Conexiunea la internet pierdută"; // gemma4:31b
-"Internet connection established" = "Conexiunea la internet a fost stabilită"; // translategemma:4b
 "Show country code instead of emoji" = "Afișează codul țării în loc de emoji"; // gemma4:31b
 
 // Battery

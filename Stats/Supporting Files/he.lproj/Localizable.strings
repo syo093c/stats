@@ -130,24 +130,19 @@
 
 // Settings
 "Open Activity Monitor" = "פתח/י את מעקב הפעילות";
-"Report a bug" = "דווחו על באג";
-"Support the application" = "תתמכו באפליקציה";
 "Close application" = "סגירת אפליקציה";
 "Open application settings" = "פתיחת הגדרות האפליקציה";
 "Open dashboard" = "פתיחת דאשבורד";
 "No notifications available in this module" = "אין התראות זמינות במודול זה"; // translategemma:4b
 "Open Calendar" = "פתח את לוח השנה"; // gemma4:31b
 "Toggle the module" = "החלף את המודול"; // gemma4:31b
-"Open System Stats" = "פתח את System Stats"; // gemma4:31b
 
 // Application settings
-"Check for updates" = "בדוק עדכונים";
 "At start" = "בעלייה";
 "Once per day" = "בכל יום";
 "Once per week" = "בכל שבוע";
 "Once per month" = "בכל חודש";
 "Never" = "אף פעם";
-"Check for update" = "בדיקת עדכון";
 "Show icon in dock" = "הצג סמל בשורת התפריטים";
 "Start at login" = "התחל בעלייה";
 "Build number" = "מספר בילד";
@@ -341,24 +336,12 @@
 // Sensors
 "Celsius" = "צלסיוס";
 "Fahrenheit" = "פרנהייט";
-"Save the fan speed" = "שמירת מהירות המאורר";
 "Fan" = "מאוורר"; // gemma4:31b
 "HID sensors" = "HID חיישני";
-"Synchronize fan's control" = "סנכרן את בקרת המאוורר"; // gemma4:31b
 "Current" = "זרם"; // gemma4:31b
 "Energy" = "אנרגיה"; // translategemma:4b
 "Show unknown sensors" = "הצג חיישנים לא ידועים"; // gemma4:31b
-"Install fan helper" = "התקן כלי עזר למאוורר"; // gemma4:31b
-"Uninstall fan helper" = "הסר את עוזר המאוורר"; // gemma4:31b
-"Approve in System Settings ▸ Login Items" = "אשר בהגדרות המערכת ▸ פריטי התחברות"; // gemma4:31b
-"Fan helper needs your approval" = "עוזר המאוורר זקוק לאישורך"; // gemma4:31b
-"To control the fans, enable Stats in System Settings ▸ Login Items." = "כדי לשלוט במאווררים, הפעל את Stats בהגדרות המערכת ▸ פריטי התחלה."; // gemma4:31b
-"Open Login Items" = "פתח פריטי התחברות"; // gemma4:31b
-"Could not enable the fan helper" = "לא ניתן להפעיל את כלי העזר למאוורר"; // gemma4:31b
-"Open System Settings ▸ Login Items, make sure Stats is allowed in the background, then try again." = "פתח את הגדרות המערכת ▸ פריטי התחברות, וודא ש-Stats מורשה ברקע, ואז נסה שוב."; // gemma4:31b
 "Fan value" = "ערך המאוורר"; // gemma4:31b
-"Turn off fan" = "כבה את המאוורר"; // translategemma:4b
-"You are going to turn off the fan. This is not recommended action that can damage your mac, are you sure you want to do that?" = "אתה עומד לכבות את המאוורר. זוהי פעולה שאינה מומלצת שעלולה לגרום נזק למחשב ה-Mac שלך, האם אתה בטוח שברצונך לעשות זאת?"; // gemma4:31b
 "Sensor threshold" = "סף חיישן"; // translategemma:4b
 "Left fan" = "שמאל"; // translategemma:4b
 "Right fan" = "ימין"; // gemma4:31b
@@ -368,7 +351,6 @@
 // Network
 "Uploading" = "העלאה";
 "Downloading" = "הורדה";
-"Public IP" = "כתובת רשת ציבורית";
 "Local IP" = "כתובת רשת מקומית";
 "Interface" = "ממשק";
 "Physical address" = "כתובת פיזית";
@@ -386,24 +368,12 @@
 "Channel" = "ערוץ"; // translategemma:4b
 "Autodetection" = "זיהוי אוטומטי"; // translategemma:4b
 "Widget activation threshold" = "סף הפעלת הווידג'ט"; // gemma4:31b
-"Internet connection" = "חיבור לאינטרנט"; // translategemma:4b
-"Connectivity host" = "מארח קישוריות"; // gemma4:31b
-"Leave empty to disable the check" = "השאר ריק כדי לבטל את הבדיקה"; // gemma4:31b
-"Connectivity history" = "היסטוריית קישוריות"; // gemma4:31b
-"Auto-refresh public IP address" = "רענון אוטומטי של כתובת IP ציבורית"; // gemma4:31b
-"Every hour" = "כל שעה"; // gemma4:31b
-"Every 12 hours" = "כל 12 שעות"; // translategemma:4b
-"Every 24 hours" = "כל 24 שעות"; // gemma4:31b
 "Last reset" = "איפוס אחרון לפני %0"; // gemma4:31b
-"Latency" = "שיהוי"; // gemma4:31b
 "Address" = "כתובת"; // translategemma:4b
 "WiFi network" = "רשת WiFi"; // gemma4:31b
 "Local IP changed" = "כתובת ה-IP המקומית השתנתה"; // translategemma:4b
-"Public IP changed" = "כתובת ה-IP הציבורית השתנתה"; // translategemma:4b
 "Previous IP" = "IP קודם: %0"; // gemma4:31b
 "New IP" = "כתובת IP חדשה: %0"; // translategemma:4b
-"Internet connection lost" = "החיבור לאינטרנט אבד"; // gemma4:31b
-"Internet connection established" = "חיבור לאינטרנט נוצר"; // gemma4:31b
 "Show country code instead of emoji" = "להציג קוד מדינה במקום אימוג'י"; // gemma4:31b
 
 // Battery
