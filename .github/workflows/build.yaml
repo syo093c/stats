@@ -3,10 +3,10 @@ name: build
 on:
   push:
     branches:
-      - master
+      - privacy/remove-remote-update-smc
   pull_request:
     branches:
-      - master
+      - privacy/remove-remote-update-smc
 
 concurrency:
   group: build-${{ github.ref }}

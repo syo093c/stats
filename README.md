@@ -1,25 +1,42 @@
-# Stats
+# Stats Privacy Build
 
-<a href="https://github.com/exelban/stats/releases"><p align="center"><img src="https://github.com/exelban/stats/raw/master/Stats/Supporting%20Files/Assets.xcassets/AppIcon.appiconset/icon_256x256.png" width="120"></p></a>
+This repository is a privacy-focused fork of [Stats](https://github.com/exelban/stats), a macOS system monitor for the menu bar. It keeps local system monitoring features while removing network-facing services, automatic update checks, telemetry-like paths, and privileged fan-control infrastructure.
 
-[![Stats](https://serhiy.s3.eu-central-1.amazonaws.com/Github_repo/stats/menus%3Fv2.3.2.png?v1)](https://github.com/exelban/stats/releases)
-[![Stats](https://serhiy.s3.eu-central-1.amazonaws.com/Github_repo/stats/popups%3Fv2.3.2.png?v3)](https://github.com/exelban/stats/releases)
+## Privacy Changes In This Fork
 
-macOS system monitor in your menu bar
+- Removed System Stats / Remote monitoring and control, including remote login, tokens, MQTT/WebSocket/API paths, remote settings, and metric upload entry points.
+- Removed automatic update checks, update notifications, silent update behavior, updater scripts, and update UI. Updates are manual only.
+- Removed public IP lookup and internet connectivity probes, including the previous `api.mac-stats.com/ip` calls, HTTP/ICMP checks, public IP UI, and public IP notifications.
+- Removed external NTP time sync. The Clock module uses local system time only.
+- Removed the SMC privileged helper, helper installation/uninstallation, helper launch daemon plists, and fan write/control paths. Fan data is read-only.
+- Removed broad ATS arbitrary-loads configuration and the library-validation entitlement exception.
+- Removed in-app support/report shortcut buttons and cleaned localization keys for removed features.
+
+Stats still displays local diagnostic data useful to professional users, including device serial number, interface MAC address, Wi-Fi SSID/BSSID, DNS servers, local IP addresses, and Wi-Fi country code. These values are local display data and are not sent to Stats, system-stats, update, telemetry, or remote-control services.
+
+## Credits
+
+This fork is based on the original [Stats](https://github.com/exelban/stats) project by Serhiy Mytrovtsiy / [exelban](https://github.com/exelban). Thank you to the upstream maintainer and contributors for the application, modules, UI, translations, and years of work that made this privacy-focused fork possible.
+
+<a href="https://github.com/syo093c/stats/releases"><p align="center"><img src="https://github.com/exelban/stats/raw/master/Stats/Supporting%20Files/Assets.xcassets/AppIcon.appiconset/icon_256x256.png" width="120"></p></a>
+
+[![Stats](https://serhiy.s3.eu-central-1.amazonaws.com/Github_repo/stats/menus%3Fv2.3.2.png?v1)](https://github.com/syo093c/stats/releases)
+[![Stats](https://serhiy.s3.eu-central-1.amazonaws.com/Github_repo/stats/popups%3Fv2.3.2.png?v3)](https://github.com/syo093c/stats/releases)
+
+macOS system monitor in your menu bar.
 
 ## Installation
-### Manual
-You can download the latest version [here](https://github.com/exelban/stats/releases/latest/download/Stats.dmg).
-This will download a file called `Stats.dmg`. Open it and move the app to the application folder.
+### This privacy-focused build
+Download this fork from [syo093c/stats releases](https://github.com/syo093c/stats/releases). Open the downloaded `Stats.dmg` and move the app to the Applications folder.
 
-### Homebrew
-To install it using Homebrew, open the Terminal app and type:
+### Upstream/Homebrew
+Homebrew installs the upstream Stats build, not this privacy-focused fork:
 ```bash
 brew install stats
 ```
 
 ### Legacy version
-Legacy version for older systems could be found [here](https://mac-stats.com/downloads).
+Legacy upstream builds for older systems are available from the original Stats project.
 
 ## Requirements
 Stats is supported on the released macOS version starting from macOS 12 (Monterey).
@@ -78,6 +95,8 @@ Most probably because it's a duplicated issue and there is an answer to the ques
 So, if your issue was closed without any response, most probably it already has a response.
 
 ### Network and privacy
+See "Privacy Changes In This Fork" at the top of this README for the full removal list.
+
 This privacy-focused build does not perform automatic update checks, public IP lookups, connectivity probes, telemetry, remote monitoring, remote control, or remote configuration.
 
 Stats reads local system counters and stores preferences locally. The network module displays local interface addresses and local traffic counters only. Network traffic labels such as "upload" mean bytes sent by your Mac over the selected interface; Stats does not upload those metrics to a server.
